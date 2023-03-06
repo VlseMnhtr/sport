@@ -1,8 +1,6 @@
 header, footer {
     position: absolute;
-    background-color: #000;
     width: 100%;
-    color: white;
 }
 
 *{
@@ -11,23 +9,31 @@ header, footer {
 }
 
 header {
-    height: 100px;
+    height: 80px;
+    box-shadow: 0 2px 4px rgb(0 21 41 / 8%);
+    background-color: #282A35;
 }
 
 header h1 {
     position: absolute;
-    margin-top: 20px;
+    margin-top: 25px;
     left: 10%;
+    font-size: 22px;
+    color: white;
 }
 
 footer {
     height: 100px;
     bottom: 0; 
+    background-color: #132e4f;
 }
 
 footer h1 {
     position: absolute;
     left: 45%;
+    top: 40px;
+    font-size: 20px;
+    color: white;
 }
 
 .nav {
@@ -39,7 +45,21 @@ footer h1 {
     position: relative;
     left: 25%;
     top: 30px;
-    color: white;
-    margin-right: 10px;
+    margin-right: 20px;
     text-decoration: none;
+    color: white;
+    font-weight: 600;
+}
+
+a :hover {
+    color: #132e4f;
+}
+
+.btn {
+    background-color: white;
+    position: relative;
+    padding: 10px;
+    border-radius: 10px;
+    left: 80%;
+    top: 20px;
 }
