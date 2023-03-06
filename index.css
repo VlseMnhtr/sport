@@ -1,0 +1,45 @@
+header, footer {
+    position: absolute;
+    background-color: #000;
+    width: 100%;
+    color: white;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    height: 100px;
+}
+
+header h1 {
+    position: absolute;
+    margin-top: 20px;
+    left: 10%;
+}
+
+footer {
+    height: 100px;
+    bottom: 0; 
+}
+
+footer h1 {
+    position: absolute;
+    left: 45%;
+}
+
+.nav {
+    position: absolute;
+    width: 100%;
+}
+
+.nav a {
+    position: relative;
+    left: 25%;
+    top: 30px;
+    color: white;
+    margin-right: 10px;
+    text-decoration: none;
+}
