@@ -1,7 +1,7 @@
-header, footer {
+/* header, footer {
     position: absolute;
     width: 100%;
-}
+} */
 
 *{
     margin: 0;
@@ -9,6 +9,7 @@ header, footer {
 }
 
 header {
+    
     height: 80px;
     box-shadow: 0 2px 4px rgb(0 21 41 / 8%);
     background-color: #282A35;
@@ -23,18 +24,19 @@ header h1 {
 }
 
 footer {
-    height: 100px;
-    bottom: 0; 
-    background-color: #132e4f;
+    text-align: center;
+    background: #282A35;
+    color: #fff;
+    padding: 20px;
 }
-
+/* 
 footer h1 {
     position: absolute;
     left: 45%;
     top: 40px;
     font-size: 20px;
     color: white;
-}
+} */
 
 .nav {
     position: absolute;
@@ -55,11 +57,38 @@ a :hover {
     color: #132e4f;
 }
 
-.btn {
-    background-color: white;
-    position: relative;
-    padding: 10px;
-    border-radius: 10px;
-    left: 80%;
-    top: 20px;
+.btn1 {
+    position: absolute;
+    width: 130px;
+    height: 40px;
+    left: 1121px;
+    top: 10px;
+}
+.btn2{
+    position: absolute;
+    width: 130px;
+    height: 40px;
+    left: 1276px;
+    top: 10px;
+    }
+
+.sec1 h1 {
+    position: absolute;
+    width: 907px;
+    height: 70px;
+    
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 24px;
+    text-align: center;
+    
+    color: #000000;
+
+}
+.logo{
+
+
+
 }
