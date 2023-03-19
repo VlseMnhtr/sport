@@ -7,12 +7,14 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.1/css/fontawesome.min.css">
 </head>
 <body>
     <section class="header">
         <nav>
             <a href="index.html"><img src="images/logo.png" alt="logo"></a>
-            <div class="nav-links">
+            <div class="nav-links" id="navLinks">
+                <i class="fa fa-times" onclick="hideMenu()"></i>
                 <ul>
                     <li><a href="sags.html">Сагс</a></li>
                     <li><a href="">Хөлбөмбөг</a></li>
@@ -24,6 +26,8 @@
             <div class="nav-button">
                 <button type="button">Нэвтрэх</button>
             </div>
+            <i class="fa fa-bars" onclick="showMenu()"></i>
+
         </nav>
     </section>
     <section class="banner">
@@ -39,5 +43,26 @@
             <div class="author">By Kerry Miller</div>
         </div>
     </section>  
+
+    <section class="topNews">
+        <div class="news">
+            <a class="label">Top News</a>
+            <a href="" class="track">UCLA Advances to Sweet 16</a>
+            <a href="" class="track">No. 1 Houston Holds Off Auburn</a>
+            <a href="" class="track">Princeton Advances to Sweet 16</a>
+        </div>
+
+    </section>
+
+
+    <script>
+        var navLinks = document.getElementById("navLinks"); 
+        function showMenu() {
+            navLinks.style.right = "0";
+        }
+        function hideMenu() {
+            navLinks.style.right = "-200px";
+        }
+    </script>
 </body>
 </html>
