@@ -5,11 +5,41 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="description" content="Баг болон тамирчдын мэдээлэл">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="/index.css" type="text/css">
+    <link rel="stylesheet" href="/team1_sags/team.css" type="text/css">
     <title>Сагсан бөмбөг</title>
 </head>
 <body>
-    <header>
+    <header class="header">
+        <nav>
+            <a href="index.html"><img src="images/logo.png" alt="logo"></a>
+            <div class="nav-links" id="navLinks">
+                <i class="fa fa-times" onclick="hideMenu()"></i>
+                <ul>
+                    <li class="active"><a href="./pages/sags.html">Сагс</a>
+                        <div class="sub-menu-1">
+                            <ul>
+                                <li>
+                                    <a href="#">
+                                        Team 1
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li><a href="#">Хөлбөмбөг</a></li>
+                    <li><a href="#">Воллейбол</a></li>
+                    <li><a href="./pages/undes_buh.html">Үндэсний бөх</a></li>
+                    <li><a href="./pages/judo.html">Жудо </a></li>
+                </ul>
+            </div>
+            <div class="nav-login">
+                <a href="login.html">Нэвтрэх</a>
+            </div>
+            <i class="fa fa-bars" onclick="showMenu()"></i>
+
+        </nav>
+    </header>
+    <!-- <header>
         <h1>Logo</h1>
         <div class="nav">
             <a href="sags.html">Сагс</a>
@@ -24,119 +54,160 @@
     </button>
     <button class="btn2">
         Нэвтрэх
-    </button>
-    <h1>...багийн мэдээлэл</h1>
+    </button> -->
+    <h1 class="h1-text">...багийн мэдээлэл</h1>
     <section class="sec1">
         
-        <div class="logo">
+        <div class="sec1-div1">
             <img src="/img/logo-garid.jpg" alt="logo">
-            <h2>M GARID</h2>
-            <p>Гаргасан амжилт</p>
+            <span>M GARID</span>
+            <!-- <h2>M GARID</h2> -->
+            <h3>Гаргасан амжилт</h3>
+            <!-- <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia voluptatibus voluptatum consequatur eveniet enim dicta accusantium aliquam unde tenetur hic recusandae atque inventore aliquid veniam perferendis, eligendi ex deserunt quo!</p> -->
         </div>
-        <div>
-            <h2>Багийн түүх</h2>
+        <div class="sec1-div2">
+            <h3>Багийн түүх</h3>
+            <!-- <p>lorem40</p> -->
         </div>
     </section>
     
-    <section>
-        <h2>...багийн тамирчдын мэдээлэл</h2>
-        <div>
+    <section class="sec2">
+        <h2 class="h1-text">...багийн тамирчдын мэдээлэл</h2>
+        <div class="banners">
+            <div class="ban-div1">
+                <img src="" alt="Сурталчилгаа">
+            </div>
+            <div class="ban-div2">
+                <img src="" alt="Сурталчилгаа">
+            </div>
+        </div>
+        <div  class="gishuud">
+
             <div>
-                <img src="#" alt="Сурталчилгаа">
+                <a href="tsatsral.html">
+                    <div class="bnew">
+                        <div>
+                            <img width="200px" src="/img/garid1.jpg" alt="1">
+
+                        </div>
+                        <div>
+
+                            <h3>Нэр</h3>
+                            <ul>
+                                <li>Нас</li>
+                                <li>Өндөр</li>
+                                <li>Нас</li>
+                            </ul>
+                        </div>
+                    </div>
+                </a>
+                
             </div>
             <div>
-                <img src="#" alt="Сурталчилгаа">
+                <a href="#">
+                    <div class="bnew">
+                        <div>
+
+                            <img width="200px" src="/img/garid2.jpg" alt="2">
+                        </div>
+                        <div>
+
+                            <h3>Нэр</h3>
+                            <ul>
+                                <li>Нас</li>
+                                <li>Нас</li>
+                                <li>Нас</li>
+                            </ul>
+                        </div>
+                    </div>
+                </a>
+                
             </div>
-        </div>
-      
-        <div>
-            <a href="tsatsral.html">
-                <div>
-                    <img src="/img/garid1.jpg" alt="1">
-                    <h2>Нэр</h2>
-                    <ul>
-                        <li>Нас</li>
-                        <li>Нас</li>
-                        <li>Нас</li>
-                    </ul>
-                </div>
-            </a>
-            
-        </div>
-        <div>
-            <a href="#">
-                <div>
-                    <img src="/img/garid2.jpg" alt="2">
-                    <h3>Нэр</h3>
-                    <ul>
-                        <li>Нас</li>
-                        <li>Нас</li>
-                        <li>Нас</li>
-                    </ul>
-                </div>
-            </a>
-            
-        </div>
-        <div>
-            <a href="#">
-                <div>
-                    <img src="/img/garid3.jpg" alt="3">
-                    <h3>Нэр</h3>
-                    <ul>
-                        <li>Нас</li>
-                        <li>Нас</li>
-                        <li>Нас</li>
-                    </ul>
-                </div>
-            </a>
-            
-        </div>
-        <div>
-            <a href="#">
-                <div>
-                    <img src="/img/garid3.jpg" alt="4">
-                    <h3>Нэр</h3>
-                    <ul>
-                        <li>Нас</li>
-                        <li>Нас</li>
-                        <li>Нас</li>
-                    </ul>
-                </div>
-            </a>
-            
-        </div>
-        <div>
-            <a href="#">
-                <div>
-                    <img src="/img/garid4.jpg" alt="5">
-                    <h3>Нэр</h3>
-                    <ul>
-                        <li>Нас</li>
-                        <li>Нас</li>
-                        <li>Нас</li>
-                    </ul>
-                </div>
-            </a>
-            
-        </div>
-        <div>
-            <a href="#">
-                <div>
-                    <img src="/img/garid5.jpg" alt="6">
-                    <h3>Нэр</h3>
-                    <ul>
-                        <li>Нас</li>
-                        <li>Нас</li>
-                        <li>Нас</li>
-                    </ul>
-                </div>
-            </a>
-            
+            <div>
+                <a href="#">
+                    <div class="bnew">
+                        <div>
+
+                            <img width="200px" src="/img/garid3.jpg" alt="3">
+                        </div>
+                        <div>
+
+                            <h3>Нэр</h3>
+                            <ul>
+                                <li>Нас</li>
+                                <li>Нас</li>
+                                <li>Нас</li>
+                            </ul>
+                        </div>
+                    </div>
+                </a>
+                
+            </div>
+            <div>
+                <a href="#">
+                    <div class="bnew">
+                        <div>
+
+                            <img width="200px" src="/img/garid3.jpg" alt="4">
+                        </div>
+                        <div>
+
+                            <h3>Нэр</h3>
+                            <ul>
+                                <li>Нас</li>
+                                <li>Нас</li>
+                                <li>Нас</li>
+                            </ul>
+                        </div>
+                    </div>
+                </a>
+                
+            </div>
+            <div>
+                <a href="#">
+                    <div class="bnew">
+                        <div>
+
+                            <img width="200px" src="/img/garid4.jpg" alt="5">
+                        </div>
+                        <div>
+
+                            <h3>Нэр</h3>
+                            <ul>
+                                <li>Нас</li>
+                                <li>Нас</li>
+                                <li>Нас</li>
+                            </ul>
+                        </div>
+                    </div>
+                </a>
+                
+            </div>
+            <div>
+                <a href="#">
+                    <div class="bnew">
+                        <div>
+
+                            <img width="200px" src="/img/garid5.jpg" alt="6">
+                        </div>
+                        <div>
+                            <h3>Нэр</h3>
+                            <ul>
+                                <li>Нас</li>
+                                <li>Нас</li>
+                                <li>Нас</li>
+                            </ul>
+
+                        </div>
+                    </div>
+                </a>
+                
+            </div>
         </div>
 
     </section>
-    <footer>
+    <!-- <footer>
         <h1>&copy; Copyright 2023</h1>
-    </footer>
+    </footer> -->
 </body>
 </html>

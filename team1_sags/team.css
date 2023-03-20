@@ -1,0 +1,250 @@
+* {
+    margin: 0;
+    padding: 0;
+    scroll-behavior: smooth;
+    font-family: 'Manrope', sans-serif;
+}
+
+:root {
+    --bg-color: #000; 
+    --second-bg-color: #26dc00;
+    --text-color: #fff; 
+}
+
+.header {
+    width: auto;
+    background-color: var(--bg-color);
+    padding: 0 6%;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}  
+
+nav a {
+    flex: 0;
+}
+
+nav img {
+    width: 50px;
+    padding: 5px 0 0 10px;
+}
+
+.nav-links {
+    flex: 1;
+    text-align: left;
+    padding-left: 30px;
+}
+
+.nav-links ul li {
+    list-style: none;
+    display: inline-block;
+    padding: 8px 12px;
+    position: relative;
+    cursor: pointer;
+}
+
+.nav-links ul li a {
+    color: var(--text-color);
+    text-decoration: none;
+    font-size: 18px;
+}
+
+.nav-links ul li:hover,
+.nav-links ul li.active {    
+    background-color: gray;
+    transition: all .3s ease-in-out;
+    border-radius: 8px;
+}
+
+.nav-links i {
+    color: var(--text-color);
+}
+
+nav .fa {
+    color: var(--text-color);
+    display: none;
+}
+
+.nav-login {
+    flex: 0;
+}
+
+.nav-login a {
+    padding: 10px 15px;
+    text-decoration: none;
+    background-color: transparent;
+    color: var(--text-color);
+    border-radius: 8px;
+    box-shadow: none;
+    cursor: pointer;
+    border: 1px solid var(--text-color);
+}
+
+.sub-menu-1 {
+    display: none;
+}
+
+.nav-links ul li:hover .sub-menu-1  {
+    display: block;
+    position: relative;
+    margin-left: -15px;
+}
+
+.nav-links ul li:hover .sub-menu-1 ul {
+    display: block;
+    margin-left: 6px;
+}
+
+.nav-links ul li:hover .sub-menu-1 ul li {
+    width: 150px;
+    padding: 10px;
+    background: transparent;
+    text-align: left;
+}
+
+/* team */
+.h1-text{
+    text-align: center;
+    margin: 40px;
+}
+/* logo, bagiin tuuhtei heseg */
+.sec1{
+    display: flex;
+    flex-wrap: wrap;
+    font-size: 30px;
+    /* text-align: center; */
+    margin-left: 70px;
+}
+.sec1-div1{
+    
+    flex: 50%;
+}
+.sec1-div1 h3{
+    text-align: center;
+}
+.sec1-div1 p{
+    margin-top: 20px;
+    
+}
+.sec1-div2{
+    text-align: center;
+    flex: 50%;
+}
+.sec1-div1 img{
+    margin-right: 40px;
+    width: 200px;
+    border-radius: 100%;
+    margin-left: 100px;
+}
+.sec1-div1 span{
+   
+    margin-top: 80px;
+    position: absolute;
+    text-align: center;  
+}
+.sec1-div1 h3{
+    margin-top: 50px;
+}
+.banners{
+    display: flex;
+    flex-wrap: wrap;
+    font-size: 30px;
+    text-align: center;
+}
+.banners img{
+    width: 100%;
+    height: 100px;
+}
+
+.ban-div1
+{
+    flex: 50%;
+    width: 50px;
+    
+
+}
+.ban-div2
+{
+    flex: 50%;
+}
+.sec2{
+    margin-left: 70px;
+}
+.gishuud 
+{
+    
+    display: flex;
+    flex-wrap: wrap;
+    height: 250px;
+    font-size: 30px;
+}
+.gishuud div{
+    flex: 0 0 33.333333%;
+    margin-top: 20px;
+}
+.bnew{
+    display: flex;
+}
+.bnew ul{
+    
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    color: #000;
+}
+.bnew ul li{
+    width: 50%;
+    text-decoration: none;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* jishee */
+/* .dropbtn {
+    background-color: #04AA6D;
+    color: white;
+    padding: 16px;
+    font-size: 16px;
+    border: none;
+  } */
+  
+  .dropdown {
+    position: relative;
+    display: inline-block;
+  }
+  
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    /* margin-top: 30px; */
+    background-color: #f1f1f1;
+    /* min-width: 160px; */
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+  }
+  
+  .dropdown-content a {
+    color: black;
+    padding: 4px 10px;
+    text-decoration: none;
+    display: block;
+  }
+  
+  .dropdown-content a:hover {background-color: #ddd;}
+  
+  .dropdown:hover .dropdown-content {display: block;}
+  
+  /* .dropdown:hover .dropbtn {background-color: #3e8e41;} */
