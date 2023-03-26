@@ -1,77 +1,123 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="description" content="Жудогын ранк, бөхийн тухай мэдээлэл, жудочдын өгсөн ярилцлага,удахгүй болох тэмцээн">
-    <meta name="keywords" content="Жудо, спорт, ранк, мэдээ, тэмцээн">
-    <meta name="author" content="манай веб" >
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Жудо</title>
-    <link rel="stylesheet" href="judo.css">
-</head>
-<body>
-    <header>
-        <h1>Logo</h1>
-        <div class="nav">
-            <a href="basketball.html">Сагс</a>
-            <a href="football.html">Хөлбөмбөг</a>
-            <a href="volleyball.html">Воллейбол</a>
-            <a href="undes_buh.html">Үндэсний бөх</a>
-            <a href="judo.html">Жудо</a>
-        </div> 
-    </header>
-    <h1>Ranking:</h1>
-    <div class="dropdown"> Gender
-        <div class="dropdown-content">
-            <ul>
-                <li>Female</li>
-                <li>Male</li>
-            </ul>
-        </div>
-    </div>
-    <div class="dropdown"> Female
-        <div class="dropdown-content">
-            <ul>
-                <li>-60</li>
-                <li>-66</li>
-                <li>-73</li>
-                <li>-81</li>
-                <li>-90</li>
-                <li>-100</li>
-                <li>+100</li>
-            </ul>   
-        </div>
-    </div>    
+    <head>
+        <meta charset="UTF-8">
+        <meta name="description" content="Жудогын ранк, бөхийн тухай мэдээлэл, жудочдын өгсөн ярилцлага,удахгүй болох тэмцээн">
+        <meta name="keywords" content="Жудо, спорт, ранк, мэдээ, тэмцээн">
+        <meta name="author" content="манай веб" >
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Жудо</title>
+        <link rel="stylesheet" href="judo.css">
+        <script src="judo.js"></script>
+        <link rel="stylesheet" href="/GitHub/sport/style.css">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.1/css/fontawesome.min.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200;300;400;500;600;700;800&family=Poppins:wght@100;200;300;400;600;700&display=swap" rel="stylesheet">
 
-    <table>
-        <tr>
-            <td>#1</td>
-            <td>SHAVDATUASHVILI LASHA</td>
-            <td>GEORGIA</td>
-            <td><img src="/GitHub/sport/Ulsiin_tug/geo.png" alt="GEORGIA"></td>    
-        </tr>
-        <tr>
-            <td>#2</td>
-            <td>HEYDAROV HIDAYAT</td>
-            <td>AZERBAIJAN</td>
-            <td><img src="/GitHub/sport/Ulsiin_tug/aze.png" alt="AZERBAIJAN"></td>
-        </tr>
-        <tr>
-            <td>#3</td>
-            <td>TSEND-OCHIR TSOGTBAATAR</td>
-            <td>MONGOLIA</td>
-            <td><img src="/GitHub/sport/Ulsiin_tug/mgl.png" alt="MONGOLIA"></td>
-        </tr>
-    </table>
-    <h1>Upcoming:</h1>
-    <ol>
-        <li>Tbilisi Grand Slam 2023</li>
-        <li>Antalya Grand Slam 2023</li>
-    </ol>
-    <p>Maria Portela: a Courageous Career</p>
-    <img src="https://res.cloudinary.com/duu3v9gfg/image/fetch/t_w_640_auto/https://78884ca60822a34fb0e6-082b8fd5551e97bc65e327988b444396.ssl.cf3.rackcdn.com/up/2023/03/72F7B452-60B7-45A1-9D1E-1131E7-1678316571.jpeg" alt="Maria Portela">
-    <p>Colombia’s New Generation</p>
-    <img src="https://res.cloudinary.com/duu3v9gfg/image/fetch/t_w_640_auto/https://78884ca60822a34fb0e6-082b8fd5551e97bc65e327988b444396.ssl.cf3.rackcdn.com/up/2022/11/AA6BC900-6C09-42A5-9137-35B789-1667666131.jpeg" alt="Арслан">
-</body>
+    </head>
+    <body>
+        <header class="header">
+            <nav>
+                <a href="index.html"><img src="/GitHub/sport/images/logo.png" alt="logo"></a>
+                <div class="nav-links" id="navLinks">
+                    <i class="fa fa-times" onclick="hideMenu()"></i>
+                    <ul>
+                        <li class="active"><a href="/GitHub/sport/pages/sags.html">Сагс</a>
+                            <div class="sub-menu-1">
+                                <ul>
+                                    <li>
+                                        <a href="">
+                                            Team 1
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li><a href="">Хөлбөмбөг</a></li>
+                        <li><a href="">Воллейбол</a></li>
+                        <li><a href="./pages/undes_buh.html">Үндэсний бөх</a></li>
+                        <li><a href="./pages/judo.html">Жудо </a></li>
+                    </ul>
+                </div>
+                <div class="nav-login">
+                    <a href="login.html">Нэвтрэх</a>
+                </div>
+                <i class="fa fa-bars" onclick="showMenu()"></i>
+
+            </nav>
+        </header>
+        
+          
+        <div class="container">
+            <div class="rank">
+                <h1>Ranking:</h1>
+                <div style="display: flex;">
+                    <div class="dropdown"> Gender
+                        <div class="dropdown-content">
+                            <ul>
+                                <li onclick="showFE()">Female</li>
+                                <li onclick="showMA()">Male</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="dropdown"> Weight
+                        <div class="dropdown-content">
+                            <ul>
+                                <li onclick="showDiv()">-60</li>
+                                <li onclick="showDiv()">-66</li>
+                                <li onclick="showDiv()">-73</li>
+                                <li onclick="showDiv()">-81</li>
+                                <li onclick="showDiv()">-90</li>
+                                <li onclick="showDiv()">-100</li>
+                                <li onclick="showDiv()">+100</li>
+                            </ul>   
+                        </div>
+                    </div>
+                </div>              
+                <table>
+                    <tr>
+                        <td>#1</td>
+                        <td><a href="/GitHub/sport/judoka/SHAVDATUASHVILI.html">SHAVDATUASHVILI LASHA</a></td>
+                        <td>GEORGIA</td>
+                        <td><img src="/GitHub/sport/Ulsiin_tug/geo.png" alt="GEORGIA"></td>    
+                    </tr>
+                    <tr>
+                        <a href="">
+                            <td>#2</td>
+                            <td>HEYDAROV HIDAYAT</td>
+                            <td>AZERBAIJAN</td>
+                            <td><img src="/GitHub/sport/Ulsiin_tug/aze.png" alt="AZERBAIJAN"></td>
+                        </a>
+                    </tr>
+                    <tr>
+                        <a href="">
+                            <td>#3</td>
+                            <td>TSEND-OCHIR TSOGTBAATAR</td>
+                            <td>MONGOLIA</td>
+                            <td><img src="/GitHub/sport/Ulsiin_tug/mgl.png" alt="MONGOLIA"></td>
+                        </a>
+                    </tr>
+                </table>
+            </div>
+            <div class="news">
+                <div class="a-new">
+                    <p>Maria Portela: a Courageous Career</p>
+                    <img src="https://res.cloudinary.com/duu3v9gfg/image/fetch/t_w_640_auto/https://78884ca60822a34fb0e6-082b8fd5551e97bc65e327988b444396.ssl.cf3.rackcdn.com/up/2023/03/72F7B452-60B7-45A1-9D1E-1131E7-1678316571.jpeg" alt="Maria Portela">
+                </div>
+                <div c  lass="a-new">
+                    <p>Colombia’s New Generation</p>
+                    <img src="https://res.cloudinary.com/duu3v9gfg/image/fetch/t_w_640_auto/https://78884ca60822a34fb0e6-082b8fd5551e97bc65e327988b444396.ssl.cf3.rackcdn.com/up/2022/11/AA6BC900-6C09-42A5-9137-35B789-1667666131.jpeg" alt="Columbia judo">
+                </div>
+            </div>
+            <div class="Upcoming">
+                <h1>Upcoming:</h1>
+                <ol class="upcoming_back">
+                    <li class="upcome">Tbilisi Grand Slam 2023</li>
+                    <li class="upcome">Antalya Grand Slam 2023</li>
+                </ol>
+            </div>
+        </div>
+    </body>
 </html>

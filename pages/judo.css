@@ -1,6 +1,55 @@
-.dropdown-content{
-    display: none;
+.container{
+    display: flex;
+    justify-content: space-between;
+}
+.rank{
+    width: 245px;
+    border: 1px gray solid;
+    font-size: 10px;
+    margin: 10px;
+    padding: 5px;
+}
+.news{
+    width: 40em;
+    margin: 10px;
+}
+.a-new{
+    width: 40em;
+    text-align: center;
+    margin-bottom: 10px;
+}
+.dropdown{
+    background-color: #03fc96;
+    height: 40px;
+    width: 100px;
+    font-size: 15px;
+    margin-left: 20px;
+    text-align: center;
 }
 .dropdown:hover .dropdown-content{
     display: block;
+    z-index: 999;
+}
+.dropdown-content{
+    margin-top: 15px;
+    display: none;
+    width: 100px;
+}
+li{
+    list-style-type: none;
+}
+.upcome{
+    background-color: white;
+    height: 3em;
+    margin-left: 1em;
+    text-align: center;
+}
+.upcoming_back{
+    height: 4em;
+    align-items: center;
+}
+.Upcoming{
+    margin: 10px;
+    border: 1px gray solid;
+    width: 245px;
 }
