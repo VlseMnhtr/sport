@@ -54,29 +54,77 @@
             <div class="rank">
                 <h1>Ranking:</h1>
                 <div style="display: flex;">
-                    <div class="dropdown"> Gender
-                        <div class="dropdown-content">
-                            <ul>
-                                <li onclick="showFE()">Female</li>
-                                <li onclick="showMA()">Male</li>
-                            </ul>
-                        </div>
+                    <div id="G" class="dropdown1" onclick="showGend()"> Gender
                     </div>
-                    <div class="dropdown"> Weight
-                        <div class="dropdown-content">
-                            <ul>
-                                <li onclick="showDiv()">-60</li>
-                                <li onclick="showDiv()">-66</li>
-                                <li onclick="showDiv()">-73</li>
-                                <li onclick="showDiv()">-81</li>
-                                <li onclick="showDiv()">-90</li>
-                                <li onclick="showDiv()">-100</li>
-                                <li onclick="showDiv()">+100</li>
-                            </ul>   
-                        </div>
+                    <div id="gender" class="dropdown-content1">
+                        <ul>
+                            <li onclick="showFE()">Female</li>
+                            <li onclick="showMA()">Male</li>
+                        </ul>
                     </div>
-                </div>              
-                <table>
+                    <div id="W" class="dropdown1" onclick="showWeight()"> Weight
+                    </div>
+                    <div id="weight" class="dropdown-content1" style="margin-left: 140px;">
+                        <ul>
+                            <li onclick="dispWeight(-60)">-60</li>
+                            <li onclick="dispWeight(-66)">-66</li>
+                            <li onclick="dispWeight(-73)">-73</li>
+                            <li onclick="dispWeight(-81)">-81</li>
+                            <li onclick="dispWeight(-90)">-90</li>
+                            <li onclick="dispWeight(-100)">-100</li>
+                            <li onclick="dispWeight(+100)">+100</li>
+                        </ul>   
+                    </div>
+                </div>
+                <table id="-60">
+                    <tr>
+                        <td>#1</td>
+                        <td><a href="/GitHub/sport/judoka/SHAVDATUASHVILI.html">Robert Mshvidobadze</a></td>
+                        <td>RUSSIA</td>
+                        <td><img src="/GitHub/sport/Ulsiin_tug/geo.png" alt="GEORGIA"></td>    
+                    </tr>
+                    <tr>
+                        <a href="">
+                            <td>#2</td>
+                            <td>Naohisa Takato</td>
+                            <td>JAPAN</td>
+                            <td><img src="/GitHub/sport/Ulsiin_tug/aze.png" alt="AZERBAIJAN"></td>
+                        </a>
+                    </tr>
+                    <tr>
+                        <a href="">
+                            <td>#3</td>
+                            <td>Amiran Papinashvili</td>
+                            <td>GEORGIA</td>
+                            <td><img src="/GitHub/sport/Ulsiin_tug/mgl.png" alt="MONGOLIA"></td>
+                        </a>
+                    </tr>
+                </table>
+                <table id="-66">
+                    <tr>
+                        <td>#1</td>
+                        <td><a href="/GitHub/sport/judoka/SHAVDATUASHVILI.html">VIERU DENIS</a></td>
+                        <td>MOLDOVA</td>
+                        <td><img src="/GitHub/sport/Ulsiin_tug/geo.png" alt="GEORGIA"></td>    
+                    </tr>
+                    <tr>
+                        <a href="">
+                            <td>#2</td>
+                            <td>YONDONPERENLEI BASKHUU</td>
+                            <td>MONGOLIA</td>
+                            <td><img src="/GitHub/sport/Ulsiin_tug/aze.png" alt="AZERBAIJAN"></td>
+                        </a>
+                    </tr>
+                    <tr>
+                        <a href="">
+                            <td>#3</td>
+                            <td>ABE HIFUMI</td>
+                            <td>JAPAN</td>
+                            <td><img src="/GitHub/sport/Ulsiin_tug/mgl.png" alt="MONGOLIA"></td>
+                        </a>
+                    </tr>
+                </table>         
+                <table id="-73">
                     <tr>
                         <td>#1</td>
                         <td><a href="/GitHub/sport/judoka/SHAVDATUASHVILI.html">SHAVDATUASHVILI LASHA</a></td>
@@ -100,7 +148,103 @@
                         </a>
                     </tr>
                 </table>
-            </div>
+                <table id="-81">
+                    <tr>
+                        <td>#1</td>
+                        <td><a href="/GitHub/sport/judoka/SHAVDATUASHVILI.html">GRIGALASHVILI TATO</a></td>
+                        <td>GEORGIA</td>
+                        <td><img src="/GitHub/sport/Ulsiin_tug/geo.png" alt="GEORGIA"></td>    
+                    </tr>
+                    <tr>
+                        <a href="">
+                            <td>#2</td>
+                            <td>CASSE MATTHIAS</td>
+                            <td>BELGIUM</td>
+                            <td><img src="/GitHub/sport/Ulsiin_tug/aze.png" alt="AZERBAIJAN"></td>
+                        </a>
+                    </tr>
+                    <tr>
+                        <a href="">
+                            <td>#3</td>
+                            <td>MOLLAEI SAEID</td>
+                            <td>AZERBAIJAN</td>
+                            <td><img src="/GitHub/sport/Ulsiin_tug/mgl.png" alt="MONGOLIA"></td>
+                        </a>
+                    </tr>
+                </table>
+                <table id="-90">
+                    <tr>
+                        <td>#1</td>
+                        <td><a href="/GitHub/sport/judoka/SHAVDATUASHVILI.html">BOBONOV DAVLAT</a></td>
+                        <td>UZBEKISTAN</td>
+                        <td><img src="/GitHub/sport/Ulsiin_tug/geo.png" alt="GEORGIA"></td>    
+                    </tr>
+                    <tr>
+                        <a href="">
+                            <td>#2</td>
+                            <td>MURAO SANSHIRO</td>
+                            <td>JAPAN</td>
+                            <td><img src="/GitHub/sport/Ulsiin_tug/aze.png" alt="AZERBAIJAN"></td>
+                        </a>
+                    </tr>
+                    <tr>
+                        <a href="">
+                            <td>#3</td>
+                            <td>GVINIASHVILI BEKA</td>
+                            <td>GEORGIA</td>
+                            <td><img src="/GitHub/sport/Ulsiin_tug/mgl.png" alt="MONGOLIA"></td>
+                        </a>
+                    </tr>
+                </table>
+                <table id="-100">
+                    <tr>
+                        <td>#1</td>
+                        <td><a href="/GitHub/sport/judoka/SHAVDATUASHVILI.html">SULAMANIDZE ILIA</a></td>
+                        <td>GEORGIA</td>
+                        <td><img src="/GitHub/sport/Ulsiin_tug/geo.png" alt="GEORGIA"></td>    
+                    </tr>
+                    <tr>
+                        <a href="">
+                            <td>#2</td>
+                            <td>KORREL MICHAEL</td>
+                            <td>NETHERLAND</td>
+                            <td><img src="/GitHub/sport/Ulsiin_tug/aze.png" alt="AZERBAIJAN"></td>
+                        </a>
+                    </tr>
+                    <tr>
+                        <a href="">
+                            <td>#3</td>
+                            <td>KOTSOIEV ZELYM</td>
+                            <td>AZERBAIJAN</td>
+                            <td><img src="/GitHub/sport/Ulsiin_tug/aze.png" alt="MONGOLIA"></td>
+                        </a>
+                    </tr>
+                </table>
+                <table id="100">
+                    <tr>
+                        <td>#1</td>
+                        <td><a href="/GitHub/sport/judoka/SHAVDATUASHVILI.html">RAKHIMOV TEMUR</a></td>
+                        <td>TAJIKSTAN</td>
+                        <td><img src="/GitHub/sport/Ulsiin_tug/geo.png" alt="GEORGIA"></td>    
+                    </tr>
+                    <tr>
+                        <a href="">
+                            <td>#2</td>
+                            <td>YUSUPOV ALISHER</td>
+                            <td>UZBEKISTAN</td>
+                            <td><img src="/GitHub/sport/Ulsiin_tug/aze.png" alt="AZERBAIJAN"></td>
+                        </a>
+                    </tr>
+                    <tr>
+                        <a href="">
+                            <td>#3</td>
+                            <td>ODKHUU TSETSENTSENGEL</td>
+                            <td>MONGOLIA</td>
+                            <td><img src="/GitHub/sport/Ulsiin_tug/mgl.png" alt="MONGOLIA"></td>
+                        </a>
+                    </tr>
+                </table>
+            </div> 
             <div class="news">
                 <div class="a-new">
                     <p>Maria Portela: a Courageous Career</p>
