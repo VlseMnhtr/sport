@@ -372,31 +372,3 @@ main {
   /* .dropdown:hover .dropbtn {background-color: #3e8e41;} */
 
 
-  /* sags css */
-  .grid-container {
-    display: grid;
-    grid-template-columns: auto auto auto auto auto auto  ;
-    /* background-color: #2196F3;   */
-    padding: 10px;
-  }
-  .grid-item {
-    background-color: rgba(255, 255, 255, 0.8);
-    border: 1px solid rgba(0, 0, 0, 0.8);
-    padding: 20px;
-    font-size: 30px;
-    text-align: center;
-  }
-  /* .section2{
-    display: grid;
-    grid-template-columns: auto auto auto auto auto auto;
-  } */
-  .item1{
-    grid-column: 1/5;
-  }
-  .bg-img{
-    background: url('/img/tenniszurag.jpg') no-repeat center center/cover;
-    min-height: 100%;
-    height: 400px;
-  }
-  /* sags css */
-
