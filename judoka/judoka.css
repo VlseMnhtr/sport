@@ -1,0 +1,8 @@
+.center{
+    margin: 10px;
+    display: flex;
+    justify-content: center;
+}
+.profile{
+    width: 30em;
+}

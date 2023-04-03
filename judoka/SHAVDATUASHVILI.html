@@ -2,69 +2,112 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="description" content="Хангайгын Төрсөн өдөр,өндөр,жин,харьяалаль амжилт">
-    <meta name="keywords" content="Хангай, цол">
-    <meta name="author" content="манай веб" >
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
-    <title>SHAVDATUASHVILI</title>
+        <meta name="description" content="Жудогын ранк, бөхийн тухай мэдээлэл, жудочдын өгсөн ярилцлага,удахгүй болох тэмцээн">
+        <meta name="keywords" content="Жудо, спорт, ранк, мэдээ, тэмцээн">
+        <meta name="author" content="манай веб" >
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Жудо</title>
+        <link rel="stylesheet" href="judoka.css">
+        <script src="judo.js"></script>
+        <link rel="stylesheet" href="/GitHub/sport/style.css">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.1/css/fontawesome.min.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200;300;400;500;600;700;800&family=Poppins:wght@100;200;300;400;600;700&display=swap" rel="stylesheet">
+
 </head>
 <body>
-    <img src="/GitHub/sport/zurag/shavda.jpg" alt="Shavdatuashvili">
-    <table>
-        <tr> 
-            <td>Нэр:</td>
-            <td>Shavdatuashvili</td> 
-        </tr>
-        <tr> 
-            <td>Төрсөн өдөр:</td>
-            <td>1992/01/31</td> 
-        </tr>
-        <tr> 
-            <td>Өндөр:</td>
-            <td>167см</td> 
-        </tr>
-        <tr> 
-            <td>Төрсөн газар:</td>
-            <td>Georgia, gori</td> 
-        </tr>
-    </table>
-    <table>
-        <tr>
-            <td></td>
-            <td>Алт</td>
-            <td>Мөнгө</td>
-            <td>Хүрэл</td>
-            <td>Тусгай байр</td>
-        </tr>
-        <tr>
-            <td>Олимп</td>
-            <td>1</td>
-            <td>1</td>
-            <td>1</td>
-            <td>0</td>
-        </tr>
-        <tr>
-            <td>Дэлхийн аварга</td>
-            <td>1</td>
-            <td>0</td>
-            <td>0</td>
-            <td>10</td>
-        </tr>
-        <tr>
-            <td>Мастерс</td>
-            <td>0</td>
-            <td>1</td>
-            <td>1</td>
-            <td>3</td>
-        </tr>
-        <tr>
-            <td>Их дуулга</td>
-            <td>4</td>
-            <td>2</td>
-            <td>7</td>
-            <td>14</td>
-        </tr>
-    </table>
+    <header class="header">
+        <nav>
+            <a href="index.html"><img src="/GitHub/sport/images/logo.png" alt="logo"></a>
+            <div class="nav-links" id="navLinks">
+                <i class="fa fa-times" onclick="hideMenu()"></i>
+                <ul>
+                    <li class="active"><a href="/GitHub/sport/pages/sags.html">Сагс</a>
+                        <div class="sub-menu-1">
+                            <ul>
+                                <li>
+                                    <a href="">
+                                        Team 1
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li><a href="">Хөлбөмбөг</a></li>
+                    <li><a href="">Воллейбол</a></li>
+                    <li><a href="./pages/undes_buh.html">Үндэсний бөх</a></li>
+                    <li><a href="./pages/judo.html">Жудо </a></li>
+                </ul>
+            </div>
+            <div class="nav-login">
+                <a href="login.html">Нэвтрэх</a>
+            </div>
+            <i class="fa fa-bars" onclick="showMenu()"></i>
+
+        </nav>
+    </header>
+    
+    <div>
+        <div class="center">
+            <img src="/GitHub/sport/zurag/shavda.jpg" alt="Shavdatuashvili" class="profile" class="center">
+        </div>
+        <table class="center">
+            <tr> 
+                <td>Нэр:</td>
+                <td>Shavdatuashvili</td> 
+            </tr>
+            <tr> 
+                <td>Төрсөн өдөр:</td>
+                <td>1992/01/31</td> 
+            </tr>
+            <tr> 
+                <td>Өндөр:</td>
+                <td>167см</td> 
+            </tr>
+            <tr> 
+                <td>Төрсөн газар:</td>
+                <td>Georgia, gori</td> 
+            </tr>
+        </table>
+        <table class="center ">
+            <tr>
+                <td></td>
+                <td>Алт</td>
+                <td>Мөнгө</td>
+                <td>Хүрэл</td>
+                <td>Тусгай байр</td>
+            </tr>
+            <tr>
+                <td>Олимп</td>
+                <td>1</td>
+                <td>1</td>
+                <td>1</td>
+                <td>0</td>
+            </tr>
+            <tr>
+                <td>Дэлхийн аварга</td>
+                <td>1</td>
+                <td>0</td>
+                <td>0</td>
+                <td>10</td>
+            </tr>
+            <tr>
+                <td>Мастерс</td>
+                <td>0</td>
+                <td>1</td>
+                <td>1</td>
+                <td>3</td>
+            </tr>
+            <tr>
+                <td>Их дуулга</td>
+                <td>4</td>
+                <td>2</td>
+                <td>7</td>
+                <td>14</td>
+            </tr>
+        </table>
+    </div>
 </body>
 </html>
