@@ -116,7 +116,8 @@ nav .fa {
     flex-wrap: wrap;
     font-size: 30px;
     /* text-align: center; */
-    margin-left: 70px;
+    margin: 70px;
+    /* margin-left: 70px; */
 }
 .sec1-div1{
     
@@ -129,9 +130,15 @@ nav .fa {
     margin-top: 20px;
     
 }
+.sec1-2{
+    background-color: #fff;
+    margin: 30px;
+
+}
 .sec1-div2{
     text-align: center;
     flex: 50%;
+    background-color: #fff;
 }
 .sec1-div1 img{
     margin-right: 40px;
@@ -171,7 +178,7 @@ nav .fa {
     flex: 50%;
 }
 .sec2{
-    margin-left: 70px;
+    margin: 40px;
 }
 .gishuud 
 {
@@ -187,7 +194,12 @@ nav .fa {
 }
 .bnew{
     display: flex;
+    background-color: #fff;
+   
 }
+.mr-20{
+    margin-right: 20px;
+  }
 .bnew ul{
     
     list-style: none;
@@ -198,6 +210,7 @@ nav .fa {
 .bnew ul li{
     width: 50%;
     text-decoration: none;
+    
 }
 
 
