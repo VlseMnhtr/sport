@@ -464,4 +464,33 @@ main {
     width: 100px;
  }
 
-  /* sags css */
+  /* sags css  tugsgul*/
+
+
+  /* sportComment json design */
+
+.sportCom-title span{
+    font-weight: bold;  
+}
+.sportCom-flex{
+    display: flex;
+    font-size: 14px;
+
+}
+.sportCom-views{
+    flex: 40%;
+}
+.sportCom-day{
+    flex: 60%;
+}
+.sportCom-text a{
+    text-align: center;
+    font-size: 14px;
+    text-decoration: none;
+    color: rgb(3, 3, 3);
+    
+    
+}
+/* duusah */
+
+ 

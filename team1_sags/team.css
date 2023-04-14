@@ -186,20 +186,39 @@ nav .fa {
     display: flex;
     flex-wrap: wrap;
     height: 250px;
-    font-size: 30px;
+  
 }
 .gishuud div{
     flex: 0 0 33.333333%;
-    margin-top: 20px;
+   
+}
+.gishuud table{
+    width: 100%;
+    border: 1px solid;
+}
+.gishuud table th, td{
+    text-align: center;
+    font-size: 11px;
 }
 .bnew{
     display: flex;
+    margin-top: 40px;
     background-color: #fff;
    
+}
+.bnew .divt1{
+    flex: 40%;
+}
+.bnew .divt2{
+    flex: 60%;
+    padding-right: 10px;
 }
 .mr-20{
     margin-right: 20px;
   }
+.mt-40{
+    margin-top: 40px;
+}
 .bnew ul{
     
     list-style: none;
