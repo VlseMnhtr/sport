@@ -16,7 +16,11 @@
 .a-new{
     width: 40em;
     text-align: center;
-    margin-bottom: 10px;
+    margin-bottom: 15px;
+}
+.thumbnail{
+    width: 30em;
+    height: 17em;
 }
 .dropdown1{
     background-color: #03fc96;
