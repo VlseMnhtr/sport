@@ -15,6 +15,82 @@
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200;300;400;500;600;700;800&family=Poppins:wght@100;200;300;400;600;700&display=swap" rel="stylesheet">
         <script src="judo.js"></script>
+
+
+        <script src="https://kit.fontawesome.com/f561b3e921.js" crossorigin="anonymous"></script>
+    <script type="module" src="../component/news-count.js"></script>
+    <script type="module" src="../component/news-save.js"></script>
+    <script type="module" src="../component/sport-newslist.js"></script>
+
+
+    <style>
+        :root {
+            --default-border-radius: 10px;
+        }
+    
+        .sport-news {
+            border: 1px solid gray;
+            border-radius: var(--default-border-radius);
+            overflow: hidden;
+            min-width: 30ch;
+            width: min-content;
+        }
+        .sport-news button{
+            background: white;
+            border: none;
+            position: relative;
+            float: right;
+            padding-right: 10px;
+        }
+        .sport-news button i:hover {color: #3e8e41}
+        .sport-news button i:active {color: red}
+
+        .fa-bookmark{
+        
+ 
+
+
+        }
+        .dropdown {
+    position: relative;
+    display: inline-block;
+  }
+  
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    /* margin-top: 30px; */
+    background-color: #f1f1f1;
+    /* min-width: 160px; */
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+    padding: 20px;
+  }
+  
+  .dropdown-content a {
+    color: black;
+    padding: 4px 10px;
+    text-decoration: none;
+    display: block;
+  }
+
+  
+  .dropdown-content a:hover {background-color: #ddd;}
+  
+  .dropdown:hover .dropdown-content {display: block;}
+  
+    </style>
+    <script>
+        function showDiv(Div) {
+        var x = document.getElementById(Div);
+        if(x.style.display=="none") {
+            x.style.display = "block";
+        } else {
+            x.style.display = "none";
+        }
+    }
+
+    </script>
     </head>
     <body>
         <header class="header">
@@ -217,7 +293,14 @@
                 </table>
             </div> 
             <div class="news">
-                <button>dark</button>
+                <input type="button" class="dropdown dropbtn"  name="answer" value="Show Div" onclick="showDiv('welcomeDiv')" />
+                <div id="welcomeDiv" style="display:none;" class="answer_list dropdown-content"><news-save color="#000"></news-save></div>
+                <news-count></news-count>aaa
+
+                
+                <sport-newslist   direction="column"></sport-newslist>
+                        
+                <!-- <button>dark</button>
                 <cmp-medee zurag="../zurag/claudia.jpeg">
                     <div slot="garchig">Maria Portela: a Courageous Career</div>
                 </cmp-medee>
@@ -230,7 +313,7 @@
                 <cmp-medee zurag="../zurag/japan_vs_uzbek.jpg">
                     <div slot="garchig">Japan Dominates, But the Hosts Shine</div>
                 </cmp-medee>
-                <script src="cmp_judo.js"></script>
+                <script src="cmp_judo.js"></script> -->
             </div>
             <div class="Upcoming">
                 <h1>Upcoming:</h1>
