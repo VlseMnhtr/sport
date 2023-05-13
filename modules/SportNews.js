@@ -13,7 +13,7 @@ class SportCommentItem {
         const timeDiff = now.getTime() - this.publishedDate.getTime(); 
         const dayDiff = Math.floor(timeDiff / (1000 * 3600 * 24)); 
         return  `<article width="200px" id="sportcomment_${this.id}">
-                    <img  height="150px" src="${ this.thumb } " class="sportCom-thumb"/>
+                    <img  height="130px" width="300px" style=""src="${ this.thumb } " class="sportCom-thumb"/>
                     <div class="sportCom-text">
                         <p class="sportCom-title" contenteditable="true" id="recentnews_title_${this.id}"><span>${ this.title }</span>:  ${ this.title }</p>
                         <div class="sportCom-flex">
@@ -21,7 +21,7 @@ class SportCommentItem {
                             <div class="sportCom-day">${dayDiff} өдрийн өмнө </div>
                             
                         </div>
-                        <a href="#">More...</a>
+                        <a href="#" >More...</a>
                     </div>
                 </article>`
     }
