@@ -27,7 +27,7 @@ class SportCommentItem {
 
                         </div>
                         <div class="divt2" >
-                            <a href="team1_member.html?id=${this.id}"><h3 class="mt-20" >${ this.name }</h3></a>
+                            <a href="team1_member.html?id=${this.id}" style="text-decoration: none; "><h3 class="mt-20" >${ this.name }</h3></a>
                             <ul class="">
                                 <li>Age: ${ this.age }</li>
                                 <li>HT:${ this.ht } </li>

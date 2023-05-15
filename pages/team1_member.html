@@ -53,13 +53,11 @@
                     </div>
                     <input type="checkbox" class="dd-input" id="test">
                     <ul class="dd-menu">
-                      <li>Action</li>
-                      <li>Another action</li>
-                      <li>Something else here</li>
+                      <li>2023-05-15</li>
+                      <li>2023-05-16</li>
+                      <li>2023-05-17</li>
                       <li class="divider"></li>
-                      <li>
-                        <a href="http://rane.io">Link to Rane.io</a>
-                      </li>
+                   
                     </ul>
                   </label>
                   <div>
@@ -265,9 +263,9 @@
                 
                 
             </div>
-            <div>
-                <h1>мэдээлэл</h1>
-                <p id="desc"></p>
+            <div style="text-align: center;" >
+                <h1>Мэдээлэл</h1>
+                <p style="padding-top: 20px;" id="desc"></p>
             </div>
         </div>
         
@@ -275,15 +273,21 @@
     <section style="background: white; margin: 20px 200px; ">
         <div>
 
-            <table >
+            <table  >
     
-                <tr>
+                <tr >
+                    <th >Age</th>
+                    <th>HT</th>
+                    <th>Wt</th>
                     <th >GP</th>
                     <th >PPG</th>
                     <th >RPG</th>
                     <th >APG</th>
                 </tr>
                 <tr>
+                    <td id="age">67</td>
+                    <td id="ht">67</td>
+                    <td id="wt">67</td>
                     <td id="gp">67</td>
                     <td id="ppg">26.6</td>
                     <td id="rpg">6.9</td>
@@ -316,6 +320,9 @@
       console.log(id, "aaaaaaaaaaaa")
         const Data = data.record.find(item => item.id === id);
         document.getElementById('result').innerHTML = JSON.stringify(Data.thumb, null, 2);
+        document.getElementById('age').innerHTML = Data.age;
+        document.getElementById('ht').innerHTML = Data.ht;
+        document.getElementById('wt').innerHTML = Data.wt;
         document.getElementById('gp').innerHTML = Data.gp;
         document.getElementById('ppg').innerHTML = Data.ppg;
         document.getElementById('rpg').innerHTML = Data.rpg;
