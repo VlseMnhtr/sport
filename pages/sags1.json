@@ -65,28 +65,36 @@
 [
     {
         "id":1,
-        "team1_name":"Zaya",
-        "team2_name":"CHo",
-        "team1_score":12,
-        "team2_score":52,
-        
-        "team1_thumb":"https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.freepik.com%2Ffree-vector%2Fcute-dog-sitting-cartoon-vector-icon-illustration-animal-nature-icon-concept-isolated-premium-vector-flat-cartoon-style_18380938.htm&psig=AOvVaw1VY36V57fsdh_gKVlrvmGx&ust=1681182812025000&source=images&cd=vfe&ved=0CBEQjRxqFwoTCPiji5asnv4CFQAAAAAdAAAAABAE",
-        
-        "team2_thumb":"https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.freepik.com%2Ffree-vector%2Fcute-dog-sitting-cartoon-vector-icon-illustration-animal-nature-icon-concept-isolated-premium-vector-flat-cartoon-style_18380938.htm&psig=AOvVaw1VY36V57fsdh_gKVlrvmGx&ust=1681182812025000&source=images&cd=vfe&ved=0CBEQjRxqFwoTCPiji5asnv4CFQAAAAAdAAAAABAE",
+        "name":"Zaya",
+        "number":13,
+        "age":20,
+        "ht":"6-4",
+        "wt":229,
+        "gp":67,
+        "ppg":26.6,
+        "rpg":6.9,
+        "apg":3.5,
+        "desc":"zzzzzzzzzzzzzsasds",
+        "thumb":"https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.freepik.com%2Ffree-vector%2Fcute-dog-sitting-cartoon-vector-icon-illustration-animal-nature-icon-concept-isolated-premium-vector-flat-cartoon-style_18380938.htm&psig=AOvVaw1VY36V57fsdh_gKVlrvmGx&ust=1681182812025000&source=images&cd=vfe&ved=0CBEQjRxqFwoTCPiji5asnv4CFQAAAAAdAAAAABAE",
         "Date":"2023.04.09 22:56:01",
        
     },
+    {
         "id":2,
-        "team1_name":"Zaya",
-        "team2_name":"CHo",
-        "team1_score":100,
-        "team2_score":99,
-        
-        "team1_thumb":"https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.freepik.com%2Ffree-vector%2Fcute-dog-sitting-cartoon-vector-icon-illustration-animal-nature-icon-concept-isolated-premium-vector-flat-cartoon-style_18380938.htm&psig=AOvVaw1VY36V57fsdh_gKVlrvmGx&ust=1681182812025000&source=images&cd=vfe&ved=0CBEQjRxqFwoTCPiji5asnv4CFQAAAAAdAAAAABAE",
-        
-        "team2_thumb":"https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.freepik.com%2Ffree-vector%2Fcute-dog-sitting-cartoon-vector-icon-illustration-animal-nature-icon-concept-isolated-premium-vector-flat-cartoon-style_18380938.htm&psig=AOvVaw1VY36V57fsdh_gKVlrvmGx&ust=1681182812025000&source=images&cd=vfe&ved=0CBEQjRxqFwoTCPiji5asnv4CFQAAAAAdAAAAABAE",
+        "name":"Malcolm",
+        "number":13,
+        "age":20,
+        "ht":"6-4",
+        "wt":229,
+        "gp":67,
+        "ppg":26.6,
+        "rpg":6.9,
+        "apg":3.5,
+        "desc":"zzzzzzzzzzzzzsasds",
+        "thumb":"https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.freepik.com%2Ffree-vector%2Fcute-dog-sitting-cartoon-vector-icon-illustration-animal-nature-icon-concept-isolated-premium-vector-flat-cartoon-style_18380938.htm&psig=AOvVaw1VY36V57fsdh_gKVlrvmGx&ust=1681182812025000&source=images&cd=vfe&ved=0CBEQjRxqFwoTCPiji5asnv4CFQAAAAAdAAAAABAE",
         "Date":"2023.04.09 22:56:01",
        
     },
+        
  
 ]
