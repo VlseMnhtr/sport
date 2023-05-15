@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="urf-8">
+    <title>Sport News</title>
+    <link rel="stylesheet" href="../style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.1/css/fontawesome.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200;300;400;500;600;700;800&family=Poppins:wght@100;200;300;400;600;700&display=swap" rel="stylesheet">
+
+</head>
+<body>
+    <header class="header">
+        <nav>
+            <a href="index.html"><img src="/images/logo.png" alt="logo"></a>
+            <div class="nav-links" id="navLinks">
+                <i class="fa fa-times" onclick="hideMenu()"></i>
+                <ul>
+                    <li class="active"><a href="./pages/sags.html">Сагс</a>
+                        <div class="sub-menu-1">
+                            <ul>
+                                <li>
+                                    <a href="">
+                                        Team 1
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li><a href="">Хөлбөмбөг</a></li>
+                    <li><a href="">Воллейбол</a></li>
+                    <li><a href="./pages/undes_buh.html">Үндэсний бөх</a></li>
+                    <li><a href="./pages/judo.html">Жудо </a></li>
+                </ul>
+            </div>
+            <div class="nav-login">
+                <a href="login.html">Нэвтрэх</a>
+            </div>
+            <i class="fa fa-bars" onclick="showMenu()"></i>
+
+        </nav>
+    </header>
+    <section class="banner">
+        <div class="text-box">
+            <h3 class="label">March madness</h3>
+            <a href="" class="title">
+                <h3>No. 1 Means Less Than Ever in March</h3>
+            </a>
+            <div class="dash"></div>
+            <a href="" class="description">
+                Kansas' loss to Arkansas makes back-to-back title winner feel as unattainable as ever
+            </a>
+            <div class="author">By Kerry Miller</div>
+        </div>
+    </section>  
+
+    <section class="topNews">
+        <div class="news">
+            <a class="label">Top News</a>
+            <a href="" class="track">UCLA Advances to Sweet 16</a>
+            <a href="" class="track">No. 1 Houston Holds Off Auburn</a>
+            <a href="" class="track">Princeton Advances to Sweet 16</a>
+        </div>
+
+    </section>
+
+    <section class="content">
+        <div class="content-img">
+            <img src="images/Image01.jpeg" alt="">
+        </div>
+        <div class="content-text">
+            <h3>Latest Playoff Bracket Predictions</h3>
+            <p>Mavs-Suns in first round? Breaking down how squads could match up this postseason</p>
+            <a href="" class="btn">Read More</a>
+        </div>
+    </section>
+
+    <section class="content">
+        <div class="content-text">
+            <h3>Latest Playoff Bracket Predictions</h3>
+            <p>Mavs-Suns in first round? Breaking down how squads could match up this postseason</p>
+            <a href="" class="btn">Read More</a>
+        </div>
+        <div class="content-img">
+            <img src="images/Image02.png" alt="">
+        </div>
+    </section>
+
+    <section class="content">
+        <div class="content-img">
+            <img src="images/Image03.png" alt="">
+        </div>
+        <div class="content-text">
+            <h3>Latest Playoff Bracket Predictions</h3>
+            <p>Mavs-Suns in first round? Breaking down how squads could match up this postseason</p>
+            <a href="" class="btn">Read More</a>
+        </div>
+    </section>
+
+
+    <script>
+        var navLinks = document.getElementById("navLinks"); 
+        function showMenu() {
+            navLinks.style.right = "0";
+        }
+        function hideMenu() {
+            navLinks.style.right = "-200px";
+        }
+    </script>
+
+    <!-- Footer -->
+
+    <footer class="footer">
+        <hr class="solid">
+        <h4>About us</h4>
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Recusandae facere porro aliquid incidunt, voluptatum optio quas <br> nobis deleniti mollitia maxime quos veritatis voluptates ea in est repudiandae iusto, non reiciendis.</p>
+    </footer>
+</body>
+</html>
