@@ -45,23 +45,14 @@ li{
     height: 3em;
     margin-left: 1em;
     text-align: center;
-}/**/
-.upcoming_back{
-    height: 4em;
-    align-items: center;
     font-size: 15px;
-}/**/
+}/*Upcome baganad baigaa temtseenii nernuudiig golluulav, busdaas ni zai avav*/
 .Upcoming{
     border: var(--stroke);
     width: var(--urgun);
     font-size: 10px;
     margin: 10px;
-}/**/
+}/*Upcoming baganiin huree hemjeeg zaav*/
 table{
     display: none;
-}/**/
-.cmp{
-    display: flex;
-    justify-content: center;
-    margin-bottom: 4em;
-}/**/
+}/*Ranking baganad baigaa tamirchdiin hvsnegtiig anhandaa haragdahgui bailgav*/
