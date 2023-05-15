@@ -1,4 +1,3 @@
-// <gobi-productlist></gobi-productlist>
 import "./sport-news.js";
 
 class SportnewsList extends HTMLElement {

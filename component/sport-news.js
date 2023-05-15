@@ -10,7 +10,7 @@ class Sportnews extends HTMLElement {
         this.shadowRoot.appendChild(template.cloneNode(true));
         //this.querySelector("p").innerText = this.getAttribute('garchig');
         this.shadowRoot.querySelector('img').src = this.getAttribute('zurag');
-        this.shadowRoot.querySelector('img').alt = "Judoko";
+        this.shadowRoot.querySelector('img').alt = "Judoka";
         
     }
     connectedCallback() {

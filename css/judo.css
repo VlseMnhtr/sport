@@ -59,3 +59,7 @@ li{
 table{
     display: none;
 }/*Ranking baganad baigaa tamirchdiin hvsnegtiig anhandaa haragdahgui bailgav*/
+.bookmark{
+    width: 100px;
+    background-color: #03fc96;
+}
