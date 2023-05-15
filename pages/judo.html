@@ -8,7 +8,8 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Жудо</title>
-        <link rel="stylesheet" href="judo.css">
+        <link rel="stylesheet" href="judo_mobile.css" media="(max-width:768px)">
+        <link rel="stylesheet" href="judo.css" media="(min-width:768px)">
         <link rel="stylesheet" href="/GitHub/sport/style.css">
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.1/css/fontawesome.min.css">
         <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -17,69 +18,10 @@
         <script src="judo.js"></script>
 
 
-        <script src="https://kit.fontawesome.com/f561b3e921.js" crossorigin="anonymous"></script>
+        
     <script type="module" src="../component/news-count.js"></script>
     <script type="module" src="../component/news-save.js"></script>
     <script type="module" src="../component/sport-newslist.js"></script>
-
-
-    <style>
-        :root {
-            --default-border-radius: 10px;
-        }
-    
-        .sport-news {
-            border: 1px solid gray;
-            border-radius: var(--default-border-radius);
-            overflow: hidden;
-            min-width: 30ch;
-            width: min-content;
-        }
-        .sport-news button{
-            background: white;
-            border: none;
-            position: relative;
-            float: right;
-            padding-right: 10px;
-        }
-        .sport-news button i:hover {color: #3e8e41}
-        .sport-news button i:active {color: red}
-
-        .fa-bookmark{
-        
- 
-
-
-        }
-        .dropdown {
-    position: relative;
-    display: inline-block;
-  }
-  
-  .dropdown-content {
-    display: none;
-    position: absolute;
-    /* margin-top: 30px; */
-    background-color: #f1f1f1;
-    /* min-width: 160px; */
-    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-    z-index: 1;
-    padding: 20px;
-  }
-  
-  .dropdown-content a {
-    color: black;
-    padding: 4px 10px;
-    text-decoration: none;
-    display: block;
-  }
-
-  
-  .dropdown-content a:hover {background-color: #ddd;}
-  
-  .dropdown:hover .dropdown-content {display: block;}
-  
-    </style>
     <script>
         function showDiv(Div) {
         var x = document.getElementById(Div);
@@ -127,8 +69,11 @@
         
         <div class="container">
             <div class="rank">
-                <h1>Ranking:</h1>
+                <div class="baganiin_tolgoi">
+                    <h1>Ranking:</h1>
+                </div>
                 <div style="display: flex;">
+                    
                     <div id="G" class="dropdown1" onclick="showGend()"> Gender
                     </div>
                     <div id="gender" class="dropdown-content1">
@@ -292,13 +237,86 @@
                     </tr>
                 </table>
             </div> 
-            <div class="news">
+            <div>
+                <template id="temp">
+                    <style>
+                        :root {
+                            --default-border-radius: 10px;
+                        }
+                    
+                        .sport-news {
+                            border: 1px solid gray;
+                            border-radius: var(--default-border-radius);
+                            overflow: hidden;
+                            min-width: 30ch;
+                            width: min-content;
+                        }
+                        .sport-news button{
+                            background: white;
+                            border: none;
+                            position: relative;
+                            float: right;
+                            padding-right: 10px;
+                        }
+                        .sport-news button i:hover {color: #3e8e41}
+                        .sport-news button i:active {color: red}
+                
+                        .fa-bookmark{
+                            margin: auto;
+                        }
+                        .dropdown {
+                            position: relative;
+                            display: inline-block;
+                        }
+                  
+                        .dropdown-content {
+                            display: none;
+                            position: absolute;
+                            /* margin-top: 30px; */
+                            background-color: #f1f1f1;
+                            /* min-width: 160px; */
+                            box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+                            z-index: 1;
+                            padding: 20px;
+                        }
+                        
+                        .dropdown-content a {
+                            color: black;
+                            padding: 4px 10px;
+                            text-decoration: none;
+                            display: block;
+                        }
+                        
+                        
+                        .dropdown-content a:hover {background-color: #ddd;}
+                        
+                        
+                        .dropdown:hover .dropdown-content {display: block;}
+                        
+                    </style>
+                    <script src="https://kit.fontawesome.com/f561b3e921.js" crossorigin="anonymous"></script>
+                    <div class="cmp-medee">
+                        <p><slot name="garchig"></slot></p>
+                        <img/>
+                        <button role="button"><i id="icon" class="fa-solid fa-bookmark fa-2x"></i></button>
+                    </div>
+                </template>
                 <input type="button" class="dropdown dropbtn"  name="answer" value="Show Div" onclick="showDiv('welcomeDiv')" />
                 <div id="welcomeDiv" style="display:none;" class="answer_list dropdown-content"><news-save color="#000"></news-save></div>
-                <news-count></news-count>aaa
+                <news-count></news-count>
 
-                
-                <sport-newslist   direction="column"></sport-newslist>
+                <sport-news class="cmp"  zurag="../zurag/claudia.jpeg">
+                    <div slot="garchig">Maria Portela: a Courageous Career </div>
+                </sport-news>
+                <sport-news class="cmp" zurag="../zurag/columbian_youngster.jpeg">
+                    <div slot="garchig">Colombia’s New Generation </div>
+                </sport-news>
+                <sport-news class="cmp" zurag="../zurag/batzaya.jpg">
+                    <div slot="garchig">Everything Is Possible for Batzaya </div>
+                </sport-news>
+                <sport-news class="cmp" zurag="../zurag/japan_vs_uzbek.jpg" darkprlight="">
+                    <div slot="garchig">Japan Dominates, But the Hosts Shine </div>
+                </sport-news>
                         
                 <!-- <button>dark</button>
                 <cmp-medee zurag="../zurag/claudia.jpeg">
@@ -316,7 +334,9 @@
                 <script src="cmp_judo.js"></script> -->
             </div>
             <div class="Upcoming">
-                <h1>Upcoming:</h1>
+                <div class="baganiin_tolgoi">
+                    <h1>Upcoming:</h1>
+                </div>
                 <ol class="upcoming_back">
                     <li class="upcome">Tbilisi Grand Slam 2023</li>
                     <li class="upcome">Antalya Grand Slam 2023</li>
