@@ -10,10 +10,11 @@ class Sportnews extends HTMLElement {
         this.shadowRoot.appendChild(template.cloneNode(true));
         //this.querySelector("p").innerText = this.getAttribute('garchig');
         this.shadowRoot.querySelector('img').src = this.getAttribute('zurag');
+        this.shadowRoot.querySelector('img').alt = "Judoko";
+        
     }
     connectedCallback() {
         this.shadowRoot.querySelector("button").addEventListener("click", () => {
-            console.log("gg");
             const myCart = document.querySelector("news-count");
             myCart.AddToCart(this.shadowRoot);
             myCart.color = "#0f0";
