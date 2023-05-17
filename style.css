@@ -1,8 +1,9 @@
 * {
     margin: 0;
     padding: 0;
-    scroll-behavior: smooth;
-    font-family: 'Manrope', sans-serif;
+    /* scroll-behavior: smooth;
+    font-family: 'Manrope', sans-serif; */
+    box-sizing: border-box;
 }
 
 :root {
@@ -186,40 +187,7 @@ nav .fa {
     padding: 0 16px 22px;
 }
 
-@media (max-width: 700px) {
-    .banner .text-box .title h3 {
-        font-size: 16px;
-    }
 
-    .nav-links ul li {
-        display: block;
-    }
-
-    .nav-links {
-        position: absolute;
-        background: var(--bg-color);
-        height: 130vh;
-        width: 200px;
-        top: 0;
-        right: -200px;
-        text-align: left;
-        z-index: 2;
-        transition: 1s;
-    }
-
-    nav .fa {
-        display: block;
-        color: var(--text-color);
-        margin: 10px;
-        font-size: 22px;
-        cursor: pointer;
-    }
-
-    .banner .text-box {
-        display: none;
-    }
-
-}
 
 /* header .navbar a:hover {
     border: 1px solid gray;

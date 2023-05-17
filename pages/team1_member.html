@@ -304,7 +304,11 @@
             <img src="" alt="Сурталчилгаа">
         </div>
     </div>
-<div id="result"></div>
+    <footer class="footer">
+        <hr class="solid">
+        <h4>About us</h4>
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Recusandae facere porro aliquid incidunt, voluptatum optio quas <br> nobis deleniti mollitia maxime quos veritatis voluptates ea in est repudiandae iusto, non reiciendis.</p>
+    </footer>
     <script>
      const queryParams = new URLSearchParams(window.location.search);
  const id = parseInt(queryParams.get('id'));
@@ -319,7 +323,7 @@
       .then(data => {
       console.log(id, "aaaaaaaaaaaa")
         const Data = data.record.find(item => item.id === id);
-        document.getElementById('result').innerHTML = JSON.stringify(Data.thumb, null, 2);
+        // document.getElementById('result').innerHTML = JSON.stringify(Data.thumb, null, 2);
         document.getElementById('age').innerHTML = Data.age;
         document.getElementById('ht').innerHTML = Data.ht;
         document.getElementById('wt').innerHTML = Data.wt;
