@@ -7,7 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <script src="https://kit.fontawesome.com/f561b3e921.js" crossorigin="anonymous"></script>
-    <link rel="stylesheet" media="screen and (max-width: 768px)" href="/css/sags_mobile.css">
+    <!-- <link rel="stylesheet" media="screen and (max-width: 768px)" href="/css/sags_mobile.css"> -->
     <link rel="stylesheet" href="/css/sags.css" type="text/css">
 </head>
 <body style="background-color: rgb(242, 242, 246);">
@@ -44,31 +44,39 @@
         <!-- ehnii bagana dahi heseg on sar, temtseen gm-->
         <div class="item1">
             <!-- onsartai heseg -->
-            <div class="div1 grid-container" >
-                <h3 style="margin: auto;">May 2023</h3>
-                <i style="margin: auto;" class="fa-solid fa-calendar"></i><i style="margin: auto;"  class="fa-solid fa-sort-down"></i>
-                <i  style="margin: auto; " class="fa-solid fa-angle-left"></i>
-                <table style="margin: auto;">
-                    <tr>
-                        <th>Sun</th>
-                        <th>Mon</th>
-                        <th>Tue</th>
-                        <th>Wed</th>
-                        <th>Thu</th>
-                        <th>Fri</th>
-                        <th>Sat</th>
-                    </tr>
-                    <tr>
-                        <td>30</td>
-                        <td>1</td>
-                        <td>2</td>
-                        <td>3</td>
-                        <td>4</td>
-                        <td>5</td>
-                        <td>6</td>
-                    </tr>
-                </table>
-                <i  style="margin: auto; " class="fa-solid fa-angle-right"></i>
+            <div class="div1 grid-container " >
+                <div class="grid-container flex-wrap div1_1" >
+
+                    <h3 >May 2023</h3>
+                    <i  class="fa-solid fa-calendar"></i><i  class="fa-solid fa-sort-down"></i>
+                    <!-- <h3 style="margin: auto 30px;">May 2023</h3>
+                    <i style="margin: auto 30px;" class="fa-solid fa-calendar"></i><i style="margin: auto 30px;" class="fa-solid fa-sort-down"></i> -->
+                </div>
+                <div class="grid-container flex-wrap div1_2">
+
+                    <i   class="fa-solid fa-angle-left"></i>
+                    <table style="margin: auto;">
+                        <tr>
+                            <th>Sun</th>
+                            <th>Mon</th>
+                            <th>Tue</th>
+                            <th>Wed</th>
+                            <th>Thu</th>
+                            <th>Fri</th>
+                            <th>Sat</th>
+                        </tr>
+                        <tr>
+                            <td>30</td>
+                            <td>1</td>
+                            <td>2</td>
+                            <td>3</td>
+                            <td>4</td>
+                            <td>5</td>
+                            <td>6</td>
+                        </tr>
+                    </table>
+                    <i class="fa-solid fa-angle-right"></i>
+                </div>
             </div>
             <div class="grid-container div2">
                 <div style="text-align: center;" class="div2-1">
@@ -76,7 +84,7 @@
 
                         <h3 style="color: red;">EAST-CONF.SEMIFINALS</h3> 
                         <p>Game 1:PHI leads 1-0</p>
-                        <div class="grid-container" >
+                        <div class="grid-container flex-wrap " >
                             <div>
     
                                 <img src="/img/logo-garid.jpg" alt="team1">
@@ -136,7 +144,7 @@
                         </tr>
                     </table>
                 </div>
-                <div>
+                <div class="div2-3">
                     <h4 style="padding-bottom: 15px; padding-top: 8px; color: red;">Game recap</h4>
                     <video width="200" controls>
                         <!-- <source src="mov_bbb.mp4" type="video/mp4"> -->
@@ -151,7 +159,7 @@
 
                         <h3 >EAST-CONF.SEMIFINALS</h3> 
                         <p>Game 1:PHI leads 1-0</p>
-                        <div class="grid-container" >
+                        <div class="grid-container flex-wrap" >
                             <div>
     
                                 <img src="/img/logo-garid.jpg" alt="team1">
@@ -211,7 +219,7 @@
                         </tr>
                     </table>
                 </div>
-                <div>
+                <div class="div2-3">
                     <h4 >Game recap</h4>
                     <video width="200"  controls>
                         <!-- <source src="mov_bbb.mp4" type="video/mp4"> -->
@@ -228,7 +236,7 @@
 
                         <h3 >EAST-CONF.SEMIFINALS</h3> 
                         <p>Game 1:PHI leads 1-0</p>
-                        <div class="grid-container" >
+                        <div class="grid-container flex-wrap" >
                             <div>
     
                                 <img src="/img/logo-garid.jpg" alt="team1">
@@ -288,7 +296,7 @@
                         </tr>
                     </table>
                 </div>
-                <div>
+                <div class="div2-3">
                     <h4>Game recap</h4>
                     <video width="200" controls>
                         <!-- <source src="mov_bbb.mp4" type="video/mp4"> -->
@@ -300,7 +308,7 @@
             <!-- js2 -->
             <div  class="bg-white mb-30">
                 <h3>Хүмүүсийн сэтгэгдэл</h3>
-                <div class="grid-container-3 borderb" id="newsjs">
+                <div class="grid-container-3 borderb" id="newsjs" style="overflow-x: auto;">
                     <script type="module" src="/modules/SportNews.js"></script>
                 </div>
             </div>
@@ -372,6 +380,15 @@
         </div>
      
     </section>
+    <script>
+        var navLinks = document.getElementById("navLinks"); 
+        function showMenu() {
+            navLinks.style.right = "0";
+        }
+        function hideMenu() {
+            navLinks.style.right = "-200px";
+        }
+    </script>
     <footer class="footer">
         <hr class="solid">
         <h4>About us</h4>

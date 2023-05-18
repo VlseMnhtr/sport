@@ -3,6 +3,7 @@
     padding: 0;
     scroll-behavior: smooth;
     font-family: 'Manrope', sans-serif;
+    box-sizing: border-box;
 }
 
 :root {
@@ -150,19 +151,105 @@ display: block;
 background: #48494a;
 } */
 .section{
+  
 margin-top: 30px;
 margin-left: 120px;
 margin-right: 100px;
 
 
 }
+.div1 .div1_1{
+    /* margin: auto ; */
+}
+.div1 .div1_1 h3, i{
+    margin: auto 30px;
+}
+@media screen and (max-width: 768px) {
+   /* index-header ehlel */
+   .banner .text-box .title h3 {
+    font-size: 16px;
+}
+
+.nav-links ul li {
+    display: block;
+}
+
+.nav-links {
+    position: absolute;
+    background: var(--bg-color);
+    height: 127vh;
+    width: 200px;
+    top: 0;
+    right: -200px;
+    text-align: left;
+    z-index: 2;
+    transition: 1s;
+}
+
+nav .fa {
+    display: block;
+    color: var(--text-color);
+    margin: 10px;
+    font-size: 22px;
+    cursor: pointer;
+}
+.nav-login {
+    flex: 1;
+    margin-left: 30px;
+}
+.banner .text-box {
+    display: none;
+}
+   /* index-header end */
+    .section {
+      /* background-color: lightgreen; */
+      /* background-color: rgb(244, 64, 64); */
+      background-color: red;
+      margin: 0px;
+    }
+    .item2{
+        display: none;
+    }
+ 
+    .item1 .div1_2 i{
+        display: none;
+    }
+    .grid-container{
+        flex-direction: column;
+        
+    }
+    .div1 .div1_1{
+        margin: auto ;
+    }
+
+    .div1 .div1_1 h3, i{
+        margin: auto 20px;
+    }
+    .div2 .middle, .div2-3{
+        display: none;
+    }
+   
+  }
 
 .grid-container {
-display: grid;
-grid-template-columns: auto auto auto auto auto auto auto auto auto  auto auto auto;
+display: flex;
+flex-direction: wrap;
+/* grid-template-columns: auto auto auto auto auto auto auto auto auto  auto auto auto; */
 
+/* display: grid; */
+/* grid-template-columns: repeat(12, 1fr); */
 
 }
+.div1_2 i{
+    grid-column: 1/9;
+  
+  }
+.flex-wrap{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
 .grid-container-3 {
 display: grid;
 grid-template-columns: auto auto auto;
@@ -188,6 +275,11 @@ text-align: center;
 .item1 .div1{
     margin-bottom: 30px;
     padding: 8px;
+}
+.item1 .div1_2 i{
+    /* margin: auto 30px; */
+    margin: auto;
+    padding: 30px;
 }
 .item1 .div2{
    

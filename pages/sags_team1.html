@@ -44,7 +44,7 @@
         </nav>
     </header>
     <section class="section">
-        <div class="grid-container2 fonth">
+        <div class="grid-container2 fonth" style="overflow-x: auto;">
             <div class="bg-color1  m-4 ml-20">
                 <label class="dropdown">
                     <div class="dd-button">
@@ -449,6 +449,15 @@
         </div>
 
     </section>
+    <script>
+        var navLinks = document.getElementById("navLinks"); 
+        function showMenu() {
+            navLinks.style.right = "0";
+        }
+        function hideMenu() {
+            navLinks.style.right = "-200px";
+        }
+    </script>
     <!-- <footer class="footer">
         <hr class="solid">
         <h4>About us</h4>
