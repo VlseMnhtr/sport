@@ -83,12 +83,14 @@ export default class SportComment {
     }
     Download(targetElement) {
         console.log("article")
-        fetch(`${this._recentNewsUrl}/latest`)
-        .then( result => {
+        fetch(`${this._recentNewsUrl}`) 
+  
+        .then(result => {
+            console.log(result, "ressssssu")
             result.json()
                 .then( jsob => {
                     console.log(jsob, "jsob")    
-                            const filteredArray = jsob.record.filter ( newsItem =>newsItem.id>0)
+                            const filteredArray = jsob.filter ( newsItem =>newsItem.id>0)
                             if (filteredArray.length > 0) { 
                                console.log("urtaa zuv avsaan")
                                 gebi(targetElement).insertAdjacentHTML("afterbegin",
@@ -112,10 +114,11 @@ export default class SportComment {
         
     }
 }
-
-
+// http://localhost:2000/category
+// https://api.jsonbin.io/v3/b/646125bfb89b1e22999d9e07
 const gebi = id => document.getElementById(id);
-const recentNews = new SportComment("https://api.jsonbin.io/v3/b/646125bfb89b1e22999d9e07")
+const recentNews = new SportComment("http://localhost:2000/category")
+console.log(recentNews, "aaaaaaaaaaa")
 recentNews.Download("newsjs");
 setInterval(()=> recentNews.Download(), 60000)
 setInterval(()=> recentNews.Upload(), 15000)

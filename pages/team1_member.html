@@ -314,15 +314,11 @@
  const id = parseInt(queryParams.get('id'));
  
  console.log(id)
-      fetch('https://api.jsonbin.io/v3/b/646125bfb89b1e22999d9e07', {
-        headers: {
-          'X-Master-Key': '$2b$10$eQs8sQchZZS7bTzfzqaOhu7nN7Vq5lvxOG0ImI8xpeN8bN8ThzA9u'
-        }
-      })
+      fetch('http://localhost:2000/category')
       .then(response => response.json())
       .then(data => {
       console.log(id, "aaaaaaaaaaaa")
-        const Data = data.record.find(item => item.id === id);
+        const Data = data.find(item => item.id === id);
         // document.getElementById('result').innerHTML = JSON.stringify(Data.thumb, null, 2);
         document.getElementById('age').innerHTML = Data.age;
         document.getElementById('ht').innerHTML = Data.ht;
