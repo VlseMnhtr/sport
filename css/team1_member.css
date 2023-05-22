@@ -1,9 +1,9 @@
-/* nav heseg ehlel */
 * {
     margin: 0;
     padding: 0;
     scroll-behavior: smooth;
     font-family: 'Manrope', sans-serif;
+    box-sizing: border-box;
 }
 
 :root {
@@ -12,7 +12,7 @@
     --second-bg-color: red;
     --text-color: #fff; 
 }
-
+/* header begin */
 .header {
     width: auto;
     background-color: var(--bg-color);
@@ -55,12 +55,25 @@ nav img {
     font-size: 18px;
 }
 
-.nav-links ul li:hover,
+
+
+  #navLinks li a:hover .dropbtn, .nav-links ul li.current {
+    color: white; 
+  }
+  
+  #navLinks:hover li a:not(:hover) {
+    color: #48494a;
+  }
+  
+
+/* .nav-links ul li:hover,
 .nav-links ul li.active {    
-    background-color: gray;
+    background-color: gray; 
     transition: all .3s ease-in-out;
-    border-radius: 8px;
-}
+    border-radius: 8px; 
+    color: red;
+    
+} */
 
 .nav-links i {
     color: var(--text-color);
@@ -107,106 +120,8 @@ nav .fa {
     background: transparent;
     text-align: left;
 }
+/* header end */
 
-.banner {
-    width: auto;
-    min-height: 120vh;
-    background-image: url(/zurag/coolguy.jpg);
-    background-position: center;
-    background-size: cover;
-    position: relative;
-}
-
-.banner .text-box {
-    position: absolute;
-    max-height: 70%;
-    max-width: 28%;
-    bottom: 7%;
-    right: 5%;
-    background-color: var(--text-color);
-    overflow: hidden;
-    z-index: 1000;
-}
-
-.banner .text-box .label {
-    background-color: var(--second-bg-color);
-    letter-spacing: 2px;
-    font-size: 11px;
-    padding: 10px 20px;
-    margin-bottom: 16px;
-    text-transform: uppercase;
-    font-weight: 700;
-}
-
-.banner .text-box .title {
-    text-decoration: none;
-    color: var(--bg-color);
-}
-
-.banner .text-box .title h3 {
-    text-transform: uppercase;
-    font-size: 32px;
-    line-height: 100%;
-    font-weight: 700;
-    padding: 0 16px 20px;
-}
-
-.banner .text-box .dash {
-    background-color: var(--bg-color);
-    width: 48px;
-    height: 7px;
-    margin: 0 16px;
-}
- 
-.banner .text-box .description {
-    display: inline-block;
-    color: var(--bg-color);
-    text-decoration: none;
-    font-weight: 400;
-    line-height: 130%;
-    padding: 15px 16px;
-    font-size: 15px;
-}
-
-.banner .text-box .author {
-    font-size: 14px;
-    padding: 0 16px 22px;
-}
-
-@media (max-width: 700px) {
-    .banner .text-box .title h3 {
-        font-size: 16px;
-    }
-
-    .nav-links ul li {
-        display: block;
-    }
-
-    .nav-links {
-        position: absolute;
-        background: var(--bg-color);
-        height: 130vh;
-        width: 200px;
-        top: 0;
-        right: -200px;
-        text-align: left;
-        z-index: 2;
-        transition: 1s;
-    }
-
-    nav .fa {
-        display: block;
-        color: var(--text-color);
-        margin: 10px;
-        font-size: 22px;
-        cursor: pointer;
-    }
-
-    .banner .text-box {
-        display: none;
-    }
-
-}
 /* nav-tugsgul */
 
 
@@ -372,81 +287,13 @@ nav .fa {
     margin: 40px;
 }
 /* logo, bagiin tuuhtei heseg */
-.sec1{
-    display: flex;
-    flex-wrap: wrap;
-    font-size: 30px;
-    /* text-align: center; */
-    margin: 70px;
-    /* margin-left: 70px; */
-}
-.sec1-div1{
-    
-    flex: 50%;
-}
-.sec1-div1 h3{
-    text-align: center;
-}
-.sec1-div1 p{
-    margin-top: 20px;
-    
-}
-.sec1-2{
-    background-color: #fff;
-    margin-right: 30px;
-    /* border-radius: 50px; */
 
-}
-.sec1-2 h3{
-    padding-top: 20px;
-    text-align: center;
-}
-.sec1-2 p{
-  
-    font-size: 18px;
-    line-height: 40px;
-    padding: 0px 50px;
-    padding-bottom: 20px;
-}
-.sec1-div2{
-    /* text-align: center; */
-    flex: 50%;
-    background-color: #fff;
-    
-}
-.sec1-div2 h3{
-    padding-top: 30px;
-    text-align: center;
-    flex: 50%;
-}
-.sec1-div2 p{
-    /* text-align: center; */
-    font-size: 18px;
-    line-height: 40px;
-    padding: 50px;
-    padding-top: 20px;
-} 
-.sec1-div1 img{
-    margin-right: 40px;
-    width: 200px;
-    border-radius: 100%;
-    margin-left: 100px;
-}
-.sec1-div1 span{
-   
-    margin-top: 80px;
-    position: absolute;
-    text-align: center;  
-}
-.sec1-div1 h3{
-    margin-top: 50px;
-}
 .banners{
     display: flex;
     flex-wrap: wrap;
     font-size: 30px;
     text-align: center;
-    
+    margin: 20px 200px;
     
 }
 .banners img{
@@ -456,106 +303,170 @@ nav .fa {
 
 .banners div{
     flex: 40%;
-    margin: 15px;
-}
-/* .ban-div1
-{
-   flex: 50%;
-    margin: 10px;
-
-}
-.ban-div2
-{
-    flex: 50%;
-    margin: 10px;
-} */
-.sec2{
-    margin: 70px 150px;
-    
-}
-.gishuud 
-{
-    
-    /* display: flex; */
-    /* flex-wrap: wrap; */
-    height: 250px;
-    display: grid;
-grid-template-columns: auto auto;
-  
-}
-/* .gishuud div{
-    flex: 0 0 33.333333%;
+    /* margin: 15px; */
+    background-color: white; 
    
-} */
-
-
-.gishuud table{
-    /* width: 100%; */
-    /* margin-left: auto; */
-    border: 1px solid #ddd;
-    border-collapse: collapse;
-    
 }
+.ban-div1
+{
+    margin-right: 10px;
 
-.sec2 .gishuud table th, td{
+}
+.gishuud table th, td{
     border-right: 1px solid #ddd;
     text-align: center;
     font-size: 11px;
     padding: 3px 20px;
     
 }
-.bnew{
-    display: flex;
-    margin-top: 40px;
-    background-color: #fff;
-    margin: 15px;
+@media screen and (max-width: 1400px){
+    .player{ 
+        margin: 20px 10px !important; 
+        margin-bottom:0px;
+        /* flex-direction: column; */
+    }
+    .info_section{
+        background: white;
+         margin: 20px 0px !important;
+    }
+    .player_info .info1 p{
+        padding: 10px 25px !important;
+    }
+    .banners{
     
-   
+        margin: 20px 50px;
+        
+    }
 }
-.bnew .divt1{
+@media screen and (max-width: 768px) {
+  
+    .nav-links ul li {
+        display: block;
+    }
+    
+    .nav-links {
+        position: absolute;
+        background: var(--bg-color);
+        height: 127vh;
+        width: 200px;
+        top: 0;
+        right: -200px;
+        text-align: left;
+        z-index: 2;
+        transition: 1s;
+    }
+    
+    nav .fa {
+        display: block;
+        color: var(--text-color);
+        margin: 10px;
+        font-size: 22px;
+        cursor: pointer;
+    }
+    .nav-login {
+        flex: 1;
+        margin-left: 30px;
+    }
+    .banner .text-box {
+        display: none;
+    }
+    /* header end */
+    .player{ 
+        margin: 20px 0px !important; 
+        margin-bottom:0px;
+        flex-direction: column;
+    }
+    .divt1{
+        flex-direction: column;
+    }
+    .divt1 img{
+        margin: auto;
+    }
+    .member1{
+        flex-direction: column;
+    }
+    .member1 table{
+        /* margin: 0px !important; */
+    }
+    .info_section{
+        background: white;
+         margin: 20px 0px !important;
+    }
+    
+    .player_info{
+        margin: auto !important;
+        display: flex;
+    }
+    .player_info .info1{
+        flex-direction: column;
+        justify-content: center; 
+    }
+    .player_info .info1 p{
+        padding: 5px 70px !important;
+    }
+    .banners{
+        display: none;
+    }
 
-    flex: 40%;
+}
+.player{
+    background: white; 
+    margin: 20px 300px; 
+    margin-bottom:0px;
+    display: flex;
+    flex-direction: wrap;
+}
+.divt1{
     display: flex;
 }
 .divt1 span{
     padding: 20px;
     font-size: 25px;
 }
-.bnew .divt2{
-    flex: 60%;
-    padding-right: 30px;
+.divt1 img{
+    width: 400px;
+   
+}
+.divt2 h1{
+    padding-top:20px ;
+}
+.divt2 p{
+    margin: 10px 40px;
+}
+/* uzuulelt */
+.info_section{
+    background: white;
+     margin: 20px 200px;
+}
+.member1{
+    margin: 2px 40px;
     display: flex;
-    flex-wrap: wrap;
-    text-align: right;
-    justify-content: right;
-    padding-top: 20px;
-    padding-bottom: 20px;
+    flex-direction: wrap;
 }
-.mr-20{
-    margin-right: 20px;
-  }
-.mr-30{
-    margin-right: 30px;
-  }
-.mt-40{
-    margin-top: 40px;
+.member1 table{
+    margin: 30px;
 }
-.bnew ul{
+.member1 table td, th{
+    font-size: 17px;
+}
+.player_info{
+    margin: auto;
+    margin-left: 10px;
+}
+.player_info .info1{
+    display: flex;
+    flex-direction: wrap;
+    justify-content: center; 
+}
+.player_info .info1 p{
     
-    list-style: none;
-    display: flex;
-    /* flex-wrap: wrap; */
-    color: #000;
-    /* margin-left: 125px; */
-    /* margin-left: auto; */
+    text-align: center;
+    padding: 10px 60px;
+    border: 1px solid rgba(0, 0, 0, 0.8);
 }
-.bnew ul li{
-    padding: 10px;
-    /* width: 33.33%; */
-    text-decoration: none;
+/* uzuulelt end */
 
-    
-}
+
 /* Footer */
 
 .footer {

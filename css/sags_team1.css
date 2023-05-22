@@ -173,40 +173,7 @@ nav .fa {
     padding: 0 16px 22px;
 }
 
-@media (max-width: 700px) {
-    .banner .text-box .title h3 {
-        font-size: 16px;
-    }
 
-    .nav-links ul li {
-        display: block;
-    }
-
-    .nav-links {
-        position: absolute;
-        background: var(--bg-color);
-        height: 130vh;
-        width: 200px;
-        top: 0;
-        right: -200px;
-        text-align: left;
-        z-index: 2;
-        transition: 1s;
-    }
-
-    nav .fa {
-        display: block;
-        color: var(--text-color);
-        margin: 10px;
-        font-size: 22px;
-        cursor: pointer;
-    }
-
-    .banner .text-box {
-        display: none;
-    }
-
-}
 /* nav-tugsgul */
 
 
@@ -394,7 +361,42 @@ nav .fa {
     }
 }
 @media screen and (max-width: 768px) {
-    /* index-header ehlel */
+      /* index-header ehlel */
+   .banner .text-box .title h3 {
+    font-size: 16px;
+    }
+
+    .nav-links ul li {
+        display: block;
+    }
+
+    .nav-links {
+        position: absolute;
+        background: var(--bg-color);
+        height: 127vh;
+        width: 200px;
+        top: 0;
+        right: -230px ;
+        text-align: left;
+        z-index: 2;
+        transition: 1s;
+    }
+
+    nav .fa {
+        display: block;
+        color: var(--text-color);
+        margin: 10px;
+        font-size: 22px;
+        cursor: pointer;
+    }
+    .nav-login {
+        flex: 1;
+        margin-left: 30px;
+    }
+    .banner .text-box {
+        display: none;
+    }
+    /* index-header end */
     .sec1{
         flex-direction: column;
         margin-top: 0px  !important;
