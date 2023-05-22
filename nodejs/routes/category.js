@@ -129,7 +129,7 @@ const updateSport_member = async(req, res) =>{
     console.log(response);
     res.json("Member updated successfully");
 }
-router.put('/:id', updateSport_member)
+router.put('/:id', updateSport_member);
 // /**
 //  * @openapi
 //  * /category/{id}:

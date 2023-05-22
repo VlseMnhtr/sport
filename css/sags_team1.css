@@ -371,10 +371,73 @@ nav .fa {
     text-align: center;
     margin: 40px;
 }
+@media screen and (max-width:470px) {
+    .gishuud table{ display: none;}
+  
+    
+}
+@media screen and (max-width: 1300px){
+    .sec2{
+        margin: 0px !important;
+        
+    }
+}
+@media screen and (max-width: 900px){
+    .gishuud 
+    {
+        
+        height: 250px;
+        display: flex !important;
+        flex-direction: column;
+
+    
+    }
+}
+@media screen and (max-width: 768px) {
+    /* index-header ehlel */
+    .sec1{
+        flex-direction: column;
+        margin-top: 0px  !important;
+    }
+    .sec1-div1 .logo{
+        /* flex-direction: column ; */
+    }
+    .sec1-div1 img{
+        /* margin-right: 0px !important; */
+        width: 100px !important;
+        margin-left: 0px !important;
+        margin-bottom: 10px;
+    }
+    .sec1-div1 p{
+        margin-top: 30px !important;
+    }
+    .sec1-2{
+        display: none;
+    }
+    .sec2{
+        margin: 0px !important;
+        
+    }
+    .sec2 h2{
+        display: none;
+    }
+    .sec2 .banners{
+        display: none;
+    }
+    .gishuud 
+    {
+        
+        height: 250px;
+        display: flex !important;
+        flex-direction: column;
+
+    
+    }
+}
 /* logo, bagiin tuuhtei heseg */
 .sec1{
     display: flex;
-    flex-wrap: wrap;
+    flex-direction: wrap;
     font-size: 30px;
     /* text-align: center; */
     margin: 70px;
@@ -426,17 +489,18 @@ nav .fa {
     padding: 50px;
     padding-top: 20px;
 } 
+.sec1-div1 .logo{
+    display: flex;
+    flex-direction: wrap;
+}
 .sec1-div1 img{
     margin-right: 40px;
     width: 200px;
     border-radius: 100%;
     margin-left: 100px;
 }
-.sec1-div1 span{
-   
+.sec1-div1 p{
     margin-top: 80px;
-    position: absolute;
-    text-align: center;  
 }
 .sec1-div1 h3{
     margin-top: 50px;
