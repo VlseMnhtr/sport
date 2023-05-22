@@ -23,7 +23,7 @@ class SportCommentItem {
                     <div class="bnew ">
                         <div class="divt1">
                             <span >${ this.number }</span>
-                            <img width="150px" src="${ this.thumb } " alt="1">
+                            <img  src="${ this.thumb } " alt="1">
 
                         </div>
                         <div class="divt2" >

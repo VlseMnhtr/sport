@@ -403,6 +403,7 @@ nav .fa {
     }
     .player_info .info1 p{
         padding: 5px 70px !important;
+        
     }
     .banners{
         display: none;
@@ -459,9 +460,9 @@ nav .fa {
     justify-content: center; 
 }
 .player_info .info1 p{
-    
+    width: 150px;
     text-align: center;
-    padding: 10px 60px;
+    /* padding: 10px 60px; */
     border: 1px solid rgba(0, 0, 0, 0.8);
 }
 /* uzuulelt end */

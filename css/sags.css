@@ -354,6 +354,10 @@ text-align: center;
 }
 
 .item1 .middle img{
+    display: block;
+    width: 100%;
+    height: auto;
+    object-fit: contain;
     width: 25px;
     border-radius: 100%;
     padding-right:3px ;
@@ -431,7 +435,15 @@ text-align: center;
 
 
  /* sportComment json design */
-
+.sportCom-thumb{
+    display: block;
+    width: 100%;
+    height: auto;
+    object-fit: contain;
+    width: 300px;
+    height: 130px;
+   
+}
  .sportCom-title span{
     font-weight: bold;  
 }
@@ -452,7 +464,7 @@ text-align: center;
     text-decoration: none;
     color: rgb(3, 3, 3);
     padding-left: 15px;
-    color: red;
+    /* color: red; */
 }
 .fonth{
     font-size: 12px;

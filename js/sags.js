@@ -48,5 +48,5 @@ const myCar = [
     tbody.appendChild(tr);
     
   }
-  table.appendChild(tbody);
+  // table.appendChild(tbody);
   

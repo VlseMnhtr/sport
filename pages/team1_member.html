@@ -265,8 +265,8 @@
                 
             </div>
             <div style="text-align: center;" class="divt2">
-                <h1>MALCOLM BROGDAN</h1>
-                <p id="desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem, beatae. Odio atque fugit, delectus dolorem vel modi expedita neque nam minima quae deleniti ad sed fuga necessitatibus aliquam placeat praesentium explicabo labore itaque? Aperiam doloribus molestias pariatur debitis inventore sequi?</p>
+                <h1 style="padding-left: 80px;">MALCOLM BROGDAN</h1>
+                <p id="desc">L</p>
             </div>
         
         
@@ -310,27 +310,28 @@
                 </tr>
                 <tr>
              
-                    <td id="gp">67</td>
-                    <td id="ppg">26.6</td>
-                    <td id="rpg">6.9</td>
-                    <td id="apg">3.5</td>
+                    <td id="gp"></td>
+                    <td id="ppg"></td>
+                    <td id="rpg"></td>
+                    <td id="apg"></td>
                 </tr>
             </table>
             <div class="player_info">
 
                 <div  class="info1">
-                 <!-- <p>Height<br><span>221</span></p> -->
-                 <p>Height</p>
-                 <p>Height</p>
-                 <p>Height</p>
-                 <p>Height</p>
+                 <p>Height<br><span id="ht">221</span></p>
+                 <p>Weight<br><span id="wt">221</span></p>
+                 <p>Country<br><span>221</span></p>
+                 <p>Last<br><span>Mongolia</span></p>
+                
                  
                 </div>
                 <div  class="info1">
-                    <p>Height</p>
-                    <p>Height</p>
-                    <p>Height</p>
-                    <p>Height</p>
+                    <p>Age<br><span id="age"></span></p>
+                    <p>Birthdate<br><span>2000-05-12</span></p>
+                    <p>Draft<br><span>2016 Pk</span></p>
+                    <p>Experience<br><span>6 Years</span></p>
+                    
                 </div>
             </div>
         </div> 
@@ -355,7 +356,7 @@
     </script>
     <footer class="footer">
         <hr class="solid">
-        <h4>About us</h4>
+        <h1 style="font-size: 20px;">About us</h1>
         <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Recusandae facere porro aliquid incidunt, voluptatum optio quas <br> nobis deleniti mollitia maxime quos veritatis voluptates ea in est repudiandae iusto, non reiciendis.</p>
     </footer>
     <script>
@@ -368,17 +369,18 @@
       .then(data => {
       console.log(id, "aaaaaaaaaaaa")
         const Data = data.find(item => item.id === id);
-        // document.getElementById('result').innerHTML = JSON.stringify(Data.thumb, null, 2);
-        // document.getElementById('age').innerHTML = Data.age;
-        // document.getElementById('ht').innerHTML = Data.ht;
-        // document.getElementById('wt').innerHTML = Data.wt;
-        // document.getElementById('gp').innerHTML = Data.gp;
-        // document.getElementById('ppg').innerHTML = Data.ppg;
-        // document.getElementById('rpg').innerHTML = Data.rpg;
-        // document.getElementById('apg').innerHTML = Data.apg;
-        // document.getElementById('desc').innerHTML = Data.desc;
-        // document.getElementById('number').innerHTML = Data.number;
+   
         document.getElementById('img').setAttribute("src", Data.thumb);
+        // document.getElementById('result').innerHTML = JSON.stringify(Data.thumb, null, 2);
+        document.getElementById('age').innerHTML = Data.age;
+        document.getElementById('ht').innerHTML = Data.ht;
+        document.getElementById('wt').innerHTML = Data.wt;
+        document.getElementById('gp').innerHTML = Data.gp;
+        document.getElementById('ppg').innerHTML = Data.ppg;
+        document.getElementById('rpg').innerHTML = Data.rpg;
+        document.getElementById('apg').innerHTML = Data.apg;
+        document.getElementById('desc').innerHTML = Data.description;
+        document.getElementById('number').innerHTML = Data.number;
       })
       .catch(error => console.error(error));
     </script>
