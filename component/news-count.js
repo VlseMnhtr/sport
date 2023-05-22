@@ -43,26 +43,25 @@ class NewsSave extends HTMLElement {
     get productCount() {
         return this.products.length;
     }
-    set color(colorValue) {
-        console.log(colorValue, "aaaaa")
-        if(this.products.length>0)
-        this.#Render(colorValue);
+    // set color(colorValue) {
+    //     if(this.products.length>0)
+    //     this.#Render(colorValue);
 
        
 
-    }
-    static get observedAttributes() {
-        return ['color'];
-    }
-    attributeChangedCallback(attrName, oldVal, newVal) {
-        switch (attrName) {
-            case "color":
-                this.#Render(this.getAttribute("color"));
-                break;
+    // }
+    // static get observedAttributes() {
+    //     return ['color'];
+    // }
+    // attributeChangedCallback(attrName, oldVal, newVal) {
+    //     switch (attrName) {
+    //         case "color":
+    //             this.#Render(this.getAttribute("color"));
+    //             break;
 
-            default:
-                break;
-        }
-    }
+    //         default:
+    //             break;
+    //     }
+    // }
 }
 window.customElements.define('news-count', NewsSave);
