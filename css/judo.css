@@ -1,6 +1,149 @@
-body{
-    font-family: 'Montserrat';
+
+* {
+    margin: 0;
+    padding: 0;
+    scroll-behavior: smooth;
+    /* font-family: 'Manrope', sans-serif; */
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
 }
+:root {
+    /* --bg-color: #252424;  */
+    --bg-color: #2b2c2d; 
+    --second-bg-color: red;
+    --text-color: #fff; 
+}
+/* header begin */
+.header {
+    width: auto;
+    background-color: var(--bg-color);
+    padding: 0 6%;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+}  
+
+nav a {
+    flex: 0;
+}
+
+nav img {
+    width: 20px;
+   
+}
+
+.nav-links {
+    flex: 1;
+    text-align: left;
+    padding-left: 30px;
+}
+
+.nav-links ul li {
+    list-style: none;
+    display: inline-block;
+    padding: 8px 12px;
+    position: relative;
+    cursor: pointer;
+}
+
+.nav-links ul li a {
+    color: var(--text-color);
+    text-decoration: none;
+    font-size: 18px;
+}
+
+
+
+  #navLinks li a:hover .dropbtn, .nav-links ul li.current {
+    color: white; 
+  }
+  
+  #navLinks:hover li a:not(:hover) {
+    color: #48494a;
+  }
+  
+
+/* .nav-links ul li:hover,
+.nav-links ul li.active {    
+    background-color: gray; 
+    transition: all .3s ease-in-out;
+    border-radius: 8px; 
+    color: red;
+    
+} */
+
+.nav-links i {
+    color: var(--text-color);
+}
+
+nav .fa {
+    color: var(--text-color);
+    display: none;
+}
+
+.nav-login {
+    flex: 0;
+}
+
+.nav-login a {
+    padding: 10px 15px;
+    text-decoration: none;
+    background-color: transparent;
+    color: var(--text-color);
+    border-radius: 8px;
+    box-shadow: none;
+    cursor: pointer;
+    border: 1px solid var(--text-color);
+}
+
+.sub-menu-1 {
+    display: none;
+}
+
+.nav-links ul li:hover .sub-menu-1  {
+    display: block;
+    position: relative;
+    margin-left: -15px;
+}
+
+.nav-links ul li:hover .sub-menu-1 ul {
+    display: block;
+    margin-left: 6px;
+}
+
+.nav-links ul li:hover .sub-menu-1 ul li {
+    width: 150px;
+    padding: 10px;
+    background: transparent;
+    text-align: left;
+}
+/* header end */
+/* sags team1,2,3 dropdown heseg-header-iin */
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+.dropdown-content {
+display: none;
+position: absolute;
+/* margin-top: 30px; */
+background-color: #f1f1f1;
+/* min-width: 160px; */
+box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+z-index: 1;
+}
+.dropdown-content a {
+color: black;
+padding: 4px 10px;
+text-decoration: none;
+display: block;
+}
+.dropdown-content a:hover {background-color: #ddd;}
+.dropdown:hover .dropdown-content {display: block;}
 .container{
     display: grid;
     grid-template-columns: 1 1 1 1;
@@ -69,3 +212,16 @@ table{
     display: none;
 }/*Ranking baganad baigaa tamirchdiin hvsnegtiig anhandaa haragdahgui bailgav*/
 
+/* Footer */
+
+.footer {
+    width: 100%;
+    text-align: center;
+    padding: 15px 0;
+}
+
+.footer h4 {
+    margin-bottom: 25px;
+    margin-top: 20px;
+    font-weight: 600;
+}
