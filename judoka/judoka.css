@@ -1,8 +1,70 @@
-.center{
+.container{
+    display: grid;
+    grid-template-columns: 1 1 1 1;
+    --stroke: 1px gray solid;
+    --urgun: 245px;
+    --main_theme: red;
+}
+.rank{
+    width: var(--urgun);
+    border: var(--stroke);
+    grid-column: 1/2;
+    justify-self: center;
+    font-size: 10px;
     margin: 10px;
-    display: flex;
-    justify-content: center;
+}
+.center{
+    grid-column: 2/4 ;
+    justify-self: center;
+    margin: 10px;
 }
 .profile{
     width: 30em;
 }
+.upcoming{
+    border: var(--stroke);
+    width: var(--urgun);
+    grid-column: 4/5;
+    justify-self: center;
+    font-size: 10px;
+    margin: 10px;
+}/*Upcoming baganiin huree hemjeeg zaav. grideer duruvdugeer bagana buyu suuliin baganad bairshuulav */
+.baganiin_tolgoi{
+    width: var(--urgun);
+    height: 40px;
+    background-color: var(--main_theme);
+    margin-bottom: 10px;
+}
+li{
+    list-style-type: none;
+}/*Judo huudasnii rank heseg deer buhchuudiig jagsaahdaa urdaa tseggui bolgov*/
+.upcome{
+    background-color: white;
+    height: 3em;
+    margin-left: 1em;
+    text-align: center;
+    font-size: 15px;
+}/*Upcome baganad baigaa temtseenii nernuudiig golluulav, busdaas ni zai avav*/
+table{
+    display: none;
+}/*Ranking baganad baigaa tamirchdiin hvsnegtiig anhandaa haragdahgui bailgav*/
+.dropdown1{
+    background-color: var(--main_theme);
+    height: 40px;
+    width: 100px;
+    font-size: 15px;
+    margin-left: 20px;
+    text-align: center;
+}/*judo huudasnii rank hesgees huis bolon jin-g songoh tovchnii css*/
+.dropdown-content1{
+    position: absolute;
+    display: none;
+    margin-top: 15px;
+    width: 100px;
+    z-index: 999;
+    background-color: #f1f1f1;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    font-size: 15px;
+    margin-left: 20px;
+    margin-top: 40px;
+}/*judo huudasnii rank hesgees huis bolon jin-g songohod garch ireh div-n class*/
