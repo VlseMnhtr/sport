@@ -13,10 +13,11 @@ class NewsCount extends HTMLElement {
     #Render(backgroundColor = "#fff") {
         if(this.products.length>0)
         {
+
             this.innerHTML = html`
             <div>
             ${this.products.map(product => html`
-            <div style="width: 10px;">${product.innerHTML}</div>
+            <div style="width: 200px;">${product.innerHTML}</div>
             `)}
             </div>
             `

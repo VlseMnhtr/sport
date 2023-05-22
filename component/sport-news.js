@@ -15,8 +15,11 @@ class Sportnews extends HTMLElement {
     }
     connectedCallback() {
         this.shadowRoot.querySelector("button").addEventListener("click", () => {
+            //alert(this.getAttribute('garchig'));
+            const para = document.createElement("p");
+            para.innerText = this.getAttribute('garchig');
             const myCart = document.querySelector("news-count");
-            myCart.AddToCart(this.shadowRoot);
+            myCart.AddToCart(this.getAttribute('garchig'));
             myCart.color = "#0f0";
             this.shadowRoot.count=this.shadowRoot.count+1;
             const icon = this.shadowRoot.querySelector("#icon");
@@ -26,7 +29,7 @@ class Sportnews extends HTMLElement {
             else
             icon.setAttribute("style", "color: red");
             const news = document.querySelector("news-save");
-            news.AddToCart(this.shadowRoot);
+            news.AddToCart(para);
             news.color = "#0f0";
             
         })
