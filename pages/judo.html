@@ -8,7 +8,8 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Жудо</title>
-        <link rel="stylesheet" href="/css/judo.css" media="(min-width:768px)">
+        <link rel="stylesheet" href="../css/judo.css" media="(min-width:768px)">
+        <link rel="stylesheet" href="../css/judo_mobile.css" media="(max-width:768px)">
         <link rel="stylesheet" href="/GitHub/sport/style.css">
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.1/css/fontawesome.min.css">
         <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -40,28 +41,29 @@
                 <div class="nav-links" id="navLinks">
                     <i class="fa fa-times" onclick="hideMenu()"></i>
                     <ul>
-                        <li class="active"><a href="/pages/sags.html">Сагс</a>
+                        <li class="active"><a href="/GitHub/sport/pages/sags.html">Сагс</a>
                             <div class="sub-menu-1">
                                 <ul>
                                     <li>
-                                        <a href="/pages/sags_team1.html">
+                                        <a href="../pages/sags_team1.html">
                                             Team 1
                                         </a>
                                     </li>
                                 </ul>
                             </div>
                         </li>
-                        <li><a href="/pages/judo.html">Хөлбөмбөг</a></li>
-                        <li><a href="/pages/judo.html">Воллейбол</a></li>
-                        <li><a href="/pages/undes_buh.html">Үндэсний бөх</a></li>
-                        <li><a href="/pages/judo.html">Жудо </a></li>
+                        <li><a href="../pages/judo.html">Хөлбөмбөг</a></li>
+                        <li><a href="../pages/judo.html">Воллейбол</a></li>
+                        <li><a href="../pages/undes_buh.html">Үндэсний бөх</a></li>
+                        <li><a href="../pages/judo.html">Жудо </a></li>
                     </ul>
                 </div>
                 <div class="nav-login">
                     <a href="login.html">Нэвтрэх</a>
                 </div>
                 <i class="fa fa-bars" onclick="showMenu()"></i>
-                
+                <input type="button" class="dropdown dropbtn"  name="answer" value="Show Div" onclick="showDiv('welcomeDiv')" />
+                <news-count></news-count>
             </nav>
         </header>
         
@@ -236,7 +238,7 @@
                     </tr>
                 </table>
             </div> 
-            <div>
+            <div class="news">
                 <template id="temp">
                     <style>
                         :root {
@@ -257,8 +259,6 @@
                             float: right;
                             padding-right: 10px;
                         }
-                        .sport-news button i:hover {color: #3e8e41}
-                        .sport-news button i:active {color: red}
                 
                         .fa-bookmark{
                             margin: auto;
@@ -271,9 +271,7 @@
                         .dropdown-content {
                             display: none;
                             position: absolute;
-                            /* margin-top: 30px; */
                             background-color: #f1f1f1;
-                            /* min-width: 160px; */
                             box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
                             z-index: 1;
                             padding: 20px;
@@ -289,20 +287,26 @@
                         
                         .dropdown-content a:hover {background-color: #ddd;}
                         
-                        
                         .dropdown:hover .dropdown-content {display: block;}
                         
+                        .cmp-medee{
+                            position: relative;
+                        }
+                        .btn{
+                            position: absolute;
+                            top: 10%;
+                            left: 94%;
+                            border: none;
+                        }   
                     </style>
                     <script src="https://kit.fontawesome.com/f561b3e921.js" crossorigin="anonymous"></script>
                     <div class="cmp-medee">
                         <p><slot name="garchig"></slot></p>
                         <img/><br>
-                        <button role="button"><i id="icon" ><img src="../images/bookmark.png" alt=""></i></button>
+                        <button class="btn"><i id="icon" ><img src="../images/bookmark.png" alt=""></i></button>
                     </div>
                 </template>
-                <input type="button" class="dropdown dropbtn"  name="answer" value="Show Div" onclick="showDiv('welcomeDiv')" />
-                <div id="welcomeDiv" style="display:none;" class="answer_list dropdown-content"><news-save color="#000"></news-save></div>
-                <news-count></news-count>
+                <div id="welcomeDiv" style="display:none; left: 85%;" class="answer_list dropdown-content"><news-save color="#000"></news-save></div>
 
                 <sport-news zurag="../zurag/claudia.jpeg">
                     <div slot="garchig">Maria Portela: a Courageous Career</div>

@@ -3,7 +3,8 @@ body{
 }
 .container{
     display: grid;
-    grid-template-columns: 1 1 1 1;
+    grid-template-columns: 1 1;
+    grid-template-rows: 1 1;
     --stroke: 1px gray solid;
     --urgun: 245px;
     --main_theme: #03fc96;
@@ -12,22 +13,25 @@ body{
     width: var(--urgun);
     border: var(--stroke);
     grid-column: 1/2;
+    grid-row: 2/3;
     justify-self: center;
     font-size: 10px;
     margin: 10px;
-}/*judo huudasiin rank baganii(divii) css. grideer negdugeer baganad bairshuulav*/
+}/*judo huudasiin rank baganii(divii) css*/
 .news{
-    grid-column: 2/4 ;
+    grid-column: 1/3;
+    grid-row: 1/2 ;
     justify-self: center;
-}/*medeenii hesgiig goliin 2 baganad bairshuulav*/
+}
 .Upcoming{
     border: var(--stroke);
     width: var(--urgun);
-    grid-column: 4/5;
+    grid-column: 2/3;
+    grid-row: 2/3;
     justify-self: center;
     font-size: 10px;
     margin: 10px;
-}/*Upcoming baganiin huree hemjeeg zaav. grideer duruvdugeer bagana buyu suuliin baganad bairshuulav */
+}/*Upcoming baganiin huree hemjeeg zaav*/
 
 .baganiin_tolgoi{
     width: var(--urgun);
