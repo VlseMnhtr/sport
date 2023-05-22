@@ -10,35 +10,34 @@
         <title>Жудо</title>
         <link rel="stylesheet" href="judoka.css">
         <script src="judo.js"></script>
-        <link rel="stylesheet" href="/GitHub/sport/style.css">
+        <!-- <link rel="stylesheet" href="/style.css"> -->
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.1/css/fontawesome.min.css">
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200;300;400;500;600;700;800&family=Poppins:wght@100;200;300;400;600;700&display=swap" rel="stylesheet">
+        <script src="https://kit.fontawesome.com/f561b3e921.js" crossorigin="anonymous"></script>
 
 </head>
 <body>
     <header class="header">
         <nav>
-            <a href="index.html"><img src="/GitHub/sport/images/logo.png" alt="logo"></a>
+            <a href="index.html"><img src="/images/logo.png" alt="logo"></a>
             <div class="nav-links" id="navLinks">
                 <i class="fa fa-times" onclick="hideMenu()"></i>
                 <ul>
-                    <li class="active"><a href="/GitHub/sport/pages/sags.html">Сагс</a>
-                        <div class="sub-menu-1">
-                            <ul>
-                                <li>
-                                    <a href="">
-                                        Team 1
-                                    </a>
-                                </li>
-                            </ul>
+                    <li class=" current dropbtn dropdown"><a href="/pages/sags.html" style="font-size: 14px;">САГС</a>
+                        <i class="fa fa-caret-down"></i>
+                        <div class="dropdown-content">
+                            <a href="sags_team1.html">Team1</a>
+                            <a href="#">Team2</a>
+                            <a href="#">Team3</a>
                         </div>
                     </li>
-                    <li><a href="">Хөлбөмбөг</a></li>
-                    <li><a href="">Воллейбол</a></li>
-                    <li><a href="./pages/undes_buh.html">Үндэсний бөх</a></li>
-                    <li><a href="./pages/judo.html">Жудо </a></li>
+                    <li><a href="#" style="font-size: 14px;">ХӨЛБӨМБӨГ</a></li>
+                    <li><a href="#" style="font-size: 14px;">ВОЛЛЕЙБОЛ</a></li>
+                    <li><a href="/pages/judo.html" style="font-size: 14px;">ҮНДЭСНИЙ  БӨХ</a></li>
+                    <li><a href="/pages/judo.html" style="font-size: 14px;">ЖУДО </a></li>
+                    <li><a href="/pages/judo.html" style="font-size: 14px;">... </a></li>
                 </ul>
             </div>
             <div class="nav-login">
@@ -51,7 +50,7 @@
     
     <div>
         <div class="center">
-            <img src="/GitHub/sport/zurag/shavda.jpg" alt="Shavdatuashvili" class="profile" class="center">
+            <img src="/zurag/shavda.jpg" alt="Shavdatuashvili" class="profile" class="center">
         </div>
         <table class="center">
             <tr> 
@@ -109,5 +108,19 @@
             </tr>
         </table>
     </div>
+    <script>
+        var navLinks = document.getElementById("navLinks"); 
+        function showMenu() {
+            navLinks.style.right = "0";
+        }
+        function hideMenu() {
+            navLinks.style.right = "-200px";
+        }
+    </script>
+    <footer class="footer">
+        <hr class="solid">
+        <h4>About us</h4>
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Recusandae facere porro aliquid incidunt, voluptatum optio quas <br> nobis deleniti mollitia maxime quos veritatis voluptates ea in est repudiandae iusto, non reiciendis.</p>
+    </footer>
 </body>
 </html>
