@@ -39,7 +39,7 @@ nav .fa {
     grid-template-rows: 1 1;
     --stroke: 1px gray solid;
     --urgun: 245px;
-    --main_theme: #03fc96;
+    --main_theme: red;
 }/*judo huudasiin ranking, medeenii heseg, upcoming gesen 3 hesgiig aguulah diviin class. */
 .rank{
     width: var(--urgun);
