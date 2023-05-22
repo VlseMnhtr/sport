@@ -13,13 +13,8 @@ class NewsSave extends HTMLElement {
 
     #Render(backgroundColor = "#fff") {
         this.innerHTML = html`
-        <div  style="width:2rem;height:auto;background-color:${backgroundColor};"><svg version="1.1"
-        xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-        viewBox="0 0 1000 1000" enable-background="new 0 0 1000 1000" xml:space="preserve">
-        <metadata> Svg Vector Icons : http://www.onlinewebfonts.com/icon </metadata>
- 
-    </svg>
-    <div>${this.products.length}</div>
+   
+    <div style="color: white; padding-bottom: 15px;" >${this.products.length}</div>
     `
     }
 
