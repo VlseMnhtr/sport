@@ -38,6 +38,8 @@ nav a {
 }
 
 nav img {
+  width: 100%;
+  height: auto;
     width: 20px;
    
 }
@@ -130,7 +132,7 @@ nav .fa {
 /* header end */
 
 .banner {
-    width: auto;
+    width: 100%;
     min-height: 120vh;
     background-image: url(/zurag/coolguy.jpg);
     background-position: center;
@@ -216,12 +218,14 @@ nav .fa {
 }
 
 .topNews .label {
-    background-color: var(--second-bg-color);
+    background-color: var(--bg-color);
     font-size: 14px;
     font-weight: 600;
     text-transform: uppercase;
     padding: 6px 18px;
     margin-right: 48px;
+    color: var(--text-color);
+    text-decoration: none;
 }
 
 .topNews .track {
@@ -248,6 +252,8 @@ nav .fa {
 }
 
 .content-img img {
+  width: 100%;
+  height: auto;
     width: 600px;
     border-radius: 8px;
 }

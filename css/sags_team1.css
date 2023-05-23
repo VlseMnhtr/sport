@@ -618,10 +618,12 @@ grid-template-columns: auto auto;
     font-size: 25px;
 }
 .divt1 img{
-    width: 150px;
+    width: 100%;
+    height: auto;
     /* height: 130px; */
    
 }
+
 .bnew .divt2{
     flex: 60%;
     padding-right: 30px;
