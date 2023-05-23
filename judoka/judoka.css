@@ -205,12 +205,15 @@ table{
     display: none;
 }/*Ranking baganad baigaa tamirchdiin hvsnegtiig anhandaa haragdahgui bailgav*/
 .dropdown1{
-    background-color: var(--main_theme);
+    background-color: var(--bg-color);
     height: 40px;
     width: 100px;
     font-size: 15px;
+    
     margin-left: 20px;
+    padding-top: 10px;
     text-align: center;
+    color: var(--text-color);
 }/*judo huudasnii rank hesgees huis bolon jin-g songoh tovchnii css*/
 .dropdown-content1{
     position: absolute;
