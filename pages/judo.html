@@ -370,14 +370,12 @@
                   
                 </div>
                 <!-- <div>Menu</div> -->
-                <div class="item4f" >
-                    <h3>Сэтгэгдэл</h3>
-                    <form action="/form/submit" method="POST">
-                        <textarea class="comment">Та сэтгэгдлээ бичнэ үү.</textarea>
-                        <br>
-                        <input style="background: red; width: 80px;" type="submit" name="submit" value="Илгээх">
-                      </form>
-                </div>
+                <form action="http://localhost:2000/category" method="POST">
+                    <label for="comment">.</label>
+                    <textarea class="comment" name="comment">Та сэтгэгдлээ бичнэ үү.</textarea>
+                    <br>
+                    <input style="background: red; width: 80px;" type="submit" name="submit" value="Илгээх">
+                  </form>
             </div>
             <hr class="solid">
             <div style="text-align: center;">

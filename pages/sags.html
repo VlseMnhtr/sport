@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="description" content="Сагсан бөмбөгийн сүүлийн үеийн мэдээ мэдээлэл">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Сагсан бөмбөг</title>
     <script src="https://kit.fontawesome.com/f561b3e921.js" crossorigin="anonymous"></script>
     <!-- <link rel="stylesheet" media="screen and (max-width: 768px)" href="/css/sags_mobile.css"> -->
     <!-- <link rel="stylesheet" href="/css/sags.css" type="text/css"> -->
@@ -419,8 +419,9 @@
             <!-- <div>Menu</div> -->
             <div class="item4f" >
                 <h3>Сэтгэгдэл</h3>
-                <form action="/form/submit" method="POST">
-                    <textarea class="comment">Та сэтгэгдлээ бичнэ үү.</textarea>
+                <form action="http://localhost:2000/category" method="POST">
+                    <label for="comment">.</label>
+                    <textarea id="comment" name="comment">Та сэтгэгдлээ бичнэ үү.</textarea>
                     <br>
                     <input style="background: red; width: 80px;" type="submit" name="submit" value="Илгээх">
                   </form>

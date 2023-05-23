@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="description" content="Баг болон тамирчдын мэдээлэл">
+    <meta name="description" content="Тамирчны мэдээлэл">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="/css/team1_member.css" type="text/css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.1/css/fontawesome.min.css">
@@ -11,7 +11,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200;300;400;500;600;700;800&family=Poppins:wght@100;200;300;400;600;700&display=swap" rel="stylesheet">
     <script src="https://kit.fontawesome.com/f561b3e921.js" crossorigin="anonymous"></script>
-    <title>Сагсан бөмбөг</title>
+    <title>Тоглогч</title>
     <style>
   
     </style>
@@ -371,8 +371,9 @@
             <!-- <div>Menu</div> -->
             <div class="item4f" >
                 <h3>Сэтгэгдэл</h3>
-                <form action="/form/submit" method="POST">
-                    <textarea class="comment">Та сэтгэгдлээ бичнэ үү.</textarea>
+                <form action="http://localhost:2000/category" method="POST">
+                    <label for="comment">.</label>
+                    <textarea id="comment" name="comment">Та сэтгэгдлээ бичнэ үү.</textarea>
                     <br>
                     <input style="background: red; width: 80px;" type="submit" name="submit" value="Илгээх">
                   </form>
