@@ -303,7 +303,7 @@
                     <div class="cmp-medee">
                         <p><slot name="garchig"></slot></p>
                         <img/><br>
-                        <button class="btn"><i id="icon" ><img src="../images/bookmark.png" alt=""></i></button>
+                        <button title="save" class="btn"><i id="icon" ><img src="../images/bookmark.png" alt=""></i></button>
                     </div>
                 </template>
                 <div id="welcomeDiv" style="display:none; left: 85%;" class="answer_list dropdown-content"><news-save color="#000"></news-save></div>
@@ -348,9 +348,9 @@
         </div>
         <footer class="footer" style="background: #2b2c2d; color: white;">
             <div class="grid-container_footer">
-                <h3 style="padding-left: 40px;" class="item1f">Спортын Mэдээ <br><span>Mэдээллүүд</span> <i class="fa-solid fa-arrow-right"></i> </h3>
+                <h1 style="padding-left: 40px;" class="item1f">Спортын Mэдээ <br><span>Mэдээллүүд</span> <i class="fa-solid fa-arrow-right"></i> </h1>
                 <div class="item2f" >
-                    <h3 onclick="toggleList1()">Бидэнтэй холбогдох <i id="angleIcon1" class="fa-solid fa-angle-down"></i></h3> 
+                    <h2 onclick="toggleList1()">Бидэнтэй холбогдох <i id="angleIcon1" class="fa-solid fa-angle-down"></i></h2> 
                     <ul style="list-style: none; " id="contact">
                         <li><i class="fa-solid fa-square-phone"></i> Утасны дугаар</li>
                         <li><i class="fa-solid fa-envelope"></i> И-мэйл</li>
@@ -371,7 +371,7 @@
                 </div>
                 <!-- <div>Menu</div> -->
                 <form action="http://localhost:2000/category" method="POST">
-                    <label for="comment">.</label>
+                    <label for="comment">..</label>
                     <textarea class="comment" name="comment">Та сэтгэгдлээ бичнэ үү.</textarea>
                     <br>
                     <input style="background: red; width: 80px;" type="submit" name="submit" value="Илгээх">
