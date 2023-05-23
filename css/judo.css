@@ -13,6 +13,24 @@
     --second-bg-color: red;
     --text-color: #fff; 
 }
+@media( prefers-color-scheme : dark){
+    body{
+        color: white;
+        background-color: black;
+    }
+    .dropdown1{
+        color: black;
+    }
+    .dropdown-content1{
+        color: black;
+    }
+    .upcome{
+        background-color: black;
+    }
+    .dropdown-content{
+        color: black;
+    }
+}
 /* header begin */
 .header {
     width: auto;
