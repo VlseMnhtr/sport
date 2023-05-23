@@ -76,6 +76,37 @@
     .content-img {
         order: 1;
     }/* content tugsgul */
+
+    /* Footer */
+    .footer{
+        text-align: center;
+    }
+  .grid-container_footer {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    /* background-color: #2196F3; */
+    padding: 10px;
+  }
+  .item2f ul{
+    display: none;
+    
+  }
+  .item3f ul{
+    display: none;
+    list-style: none;
+  }
+  .item1f{
+    display: none;
+  }
+  #angleIcon1{
+    display: inline;
+  }
+  #angleIcon{
+    display: inline;
+  }
+  /* footer end */
+  
     
 
 

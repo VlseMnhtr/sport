@@ -419,6 +419,52 @@
         </div>
 
     </section>
+
+    
+    <footer class="footer" style="background: #2b2c2d; color: white;">
+        <div class="grid-container_footer">
+            <h3 style="padding-left: 40px;" class="item1f">Спортын Mэдээ <br><span>Mэдээллүүд</span> <i class="fa-solid fa-arrow-right"></i> </h3>
+            <div class="item2f" >
+                <h3 onclick="toggleList1()">Бидэнтэй холбогдох <i id="angleIcon1" class="fa-solid fa-angle-down"></i></h3> 
+                <ul style="list-style: none; " id="contact">
+                    <li><i class="fa-solid fa-square-phone"></i> Утасны дугаар</li>
+                    <li><i class="fa-solid fa-envelope"></i> И-мэйл</li>
+                    <li><i class="fa-solid fa-location-dot"></i> Хаяг</li>
+                    <li><i class="fa-brands fa-facebook"></i> Facebook</li>
+                </ul>
+            </div>
+            <div class="item3f">
+               <h3 onclick="toggleList()">Спорт <i id="angleIcon" class="fa-solid fa-angle-down"></i></h3> 
+               
+               <ul id="sportList">
+                <li>Сагсан бөмбөг</li>
+                <li>Воллейбол</li>
+                <li>Үндэсний бөх</li>
+                <li>Жудо</li>
+               </ul>
+              
+            </div>
+            <!-- <div>Menu</div> -->
+            <div class="item4f" >
+                <h3>Сэтгэгдэл</h3>
+                <form action="/form/submit" method="POST">
+                    <textarea class="comment">Та сэтгэгдлээ бичнэ үү.</textarea>
+                    <br>
+                    <input style="background: red; width: 80px;" type="submit" name="submit" value="Илгээх">
+                  </form>
+            </div>
+        </div>
+        <hr class="solid">
+        <div style="text-align: center;">
+
+            <h4>About us</h4>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Recusandae facere porro aliquid incidunt, voluptatum optio quas <br> nobis deleniti mollitia maxime quos veritatis voluptates ea in est repudiandae iusto, non reiciendis.</p>
+            <br>
+            <p>
+                @2023 Sport News. Бүх эрх хуулиар хамгаалагдсан.
+            </p>
+        </div>
+    </footer>
     <script>
         var navLinks = document.getElementById("navLinks"); 
         function showMenu() {
@@ -427,11 +473,34 @@
         function hideMenu() {
             navLinks.style.right = "-200px";
         }
+        function toggleList() {
+        var list = document.getElementById("sportList");
+        var angleIcon = document.getElementById("angleIcon");
+        if (list.style.display === "none") {
+        list.style.display = "block";
+        angleIcon.classList.remove("fa-angle-down");
+        angleIcon.classList.add("fa-angle-up");
+        } else {
+        list.style.display = "none";
+        angleIcon.classList.remove("fa-angle-up");
+        angleIcon.classList.add("fa-angle-down");
+        }
+        
+        }
+        function toggleList1() {
+        var list = document.getElementById("contact");
+        var angleIcon = document.getElementById("angleIcon1");
+        if (list.style.display === "none") {
+        list.style.display = "block";
+        angleIcon.classList.remove("fa-angle-down");
+        angleIcon.classList.add("fa-angle-up");
+        } else {
+        list.style.display = "none";
+        angleIcon.classList.remove("fa-angle-up");
+        angleIcon.classList.add("fa-angle-down");
+        }
+        
+        }
     </script>
-    <!-- <footer class="footer">
-        <hr class="solid">
-        <h4>About us</h4>
-        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Recusandae facere porro aliquid incidunt, voluptatum optio quas <br> nobis deleniti mollitia maxime quos veritatis voluptates ea in est repudiandae iusto, non reiciendis.</p>
-    </footer> -->
 </body>
 </html>

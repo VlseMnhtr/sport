@@ -229,8 +229,36 @@ nav .fa {
     .div2 .middle, .div2-3{
         display: none;
     }
-   
-  }
+    /* Footer */
+    .footer{
+        text-align: center !important;
+    }
+    .grid-container_footer {
+    display: flex !important;
+    flex-direction: column;
+    gap: 10px;
+    /* background-color: #2196F3; */
+    padding: 10px;
+    }
+    .item2f ul{
+    display: none;
+
+    }
+    .item3f ul{
+    display: none;
+    list-style: none;
+    }
+    .item1f{
+    display: none;
+    }
+    #angleIcon1{
+    display: inline !important;
+    }
+    #angleIcon{
+    display: inline !important;
+    }
+    /* footer end */
+}
 
 .grid-container {
 display: flex;
@@ -481,7 +509,7 @@ text-align: center;
 
 
 /* Footer */
-
+/* 
 .footer {
     width: 100%;
     text-align: center;
@@ -492,7 +520,60 @@ text-align: center;
     margin-bottom: 25px;
     margin-top: 20px;
     font-weight: 600;
-}
+} */
+/* Footer */
+
+.footer {
+    width: 100%;
+    text-align: left;
+    padding: 15px 0;
+    margin-top: 15px;
+  }
+  
+  .footer h4 {
+    margin-bottom: 25px;
+    margin-top: 20px;
+    font-weight: 600;
+  }
+  
+  .item1f { grid-area: item1; }
+  .item2f { grid-area: item2; }
+  .item3f { grid-area: item3; }
+  .item4f { grid-area: item4; }
+  
+  .grid-container_footer {
+    display: grid;
+    grid-template-areas:
+  
+      'item1 item1 item1 item2 item2 item2 item3 item3 item3 item4 item4 item4';
+    gap: 10px;
+    /* background-color: #2196F3; */
+    padding: 10px;
+  }
+  .item2f li{
+    padding: 8px;
+  }
+  .item3f li{
+    padding: 8px;
+  }
+  #angleIcon1{
+    display: none;
+  }
+  #angleIcon{
+    display: none;
+  }
+  .comment {
+  width: 50%;
+  height: 50px;
+  padding: 10px;
+  background-color: white;
+  font: 1em/1em cursive;
+  
+  }
+  footer h3{
+  padding-bottom: 5px;
+  }
+  /* footer end */
 
 
 
