@@ -105,3 +105,32 @@ table{
     display: none;
 }/*Ranking baganad baigaa tamirchdiin hvsnegtiig anhandaa haragdahgui bailgav*/
 
+/* Footer */
+.footer{
+    text-align: center !important;
+}
+.grid-container_footer {
+display: flex !important;
+flex-direction: column;
+gap: 10px;
+/* background-color: #2196F3; */
+padding: 10px;
+}
+.item2f ul{
+display: none;
+
+}
+.item3f ul{
+display: none;
+list-style: none;
+}
+.item1f{
+display: none;
+}
+#angleIcon1{
+display: inline !important;
+}
+#angleIcon{
+display: inline !important;
+}
+/* footer end */

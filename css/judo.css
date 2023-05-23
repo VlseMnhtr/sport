@@ -225,16 +225,55 @@ table{
     display: none;
 }/*Ranking baganad baigaa tamirchdiin hvsnegtiig anhandaa haragdahgui bailgav*/
 
-/* Footer */
-
 .footer {
     width: 100%;
-    text-align: center;
+    text-align: left;
     padding: 15px 0;
-}
-
-.footer h4 {
+    margin-top: 30px;
+  }
+  
+  .footer h4 {
     margin-bottom: 25px;
     margin-top: 20px;
     font-weight: 600;
-}
+  }
+  
+  .item1f { grid-area: item1; }
+  .item2f { grid-area: item2; }
+  .item3f { grid-area: item3; }
+  .item4f { grid-area: item4; }
+  
+  .grid-container_footer {
+    display: grid;
+    grid-template-areas:
+  
+      'item1 item1 item1 item2 item2 item2 item3 item3 item3 item4 item4 item4';
+    gap: 10px;
+    /* background-color: #2196F3; */
+    padding: 10px;
+  }
+  .item2f li{
+    padding: 8px;
+  }
+  .item3f li{
+    padding: 8px;
+  }
+  #angleIcon1{
+    display: none;
+  }
+  #angleIcon{
+    display: none;
+  }
+  .comment {
+  width: 50%;
+  height: 50px;
+  padding: 10px;
+  background-color: white;
+  font: 1em/1em cursive;
+  
+  }
+  footer h3{
+  padding-bottom: 5px;
+  }
+  /* footer end */
+
