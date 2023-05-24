@@ -6,22 +6,50 @@
     <meta name="description" content="Нэвтрэх">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Login</title>
+    <link rel="stylesheet" href="./css/login.css">
+    <link rel="stylesheet" href="./style.css">
 </head>
 <body>
-    <h1>Нэвтрэх</h1>
-    <form >
-        <div>
-            <label for="name" >Нэвтрэх нэр</label>
-            <input id="name" type="text" placeholder="Нэрээ оруулна уу." name="name">
-            <label for="password" >Нууц үг</label>
-            <input id="password" type="password" placeholder="Нууц үгээ оруулна уу." name="password">
-            <button>Нэвтрэх</button>
-        </div>
-        <div>
-            <span>Don’t have an account?</span>
-            <a href="#">Бүртгүүлэх</a>
-        </div>
-    </form>
-  
+    <header class="header">
+        <nav>
+            <a href="index.html"><img src="/images/logo1.jpg" alt="logo"></a>
+            <div class="nav-links" id="navLinks">
+                <i class="fa fa-times" onclick="hideMenu()"></i>
+                <ul>
+                    <li class=" current dropbtn dropdown"><a href="/pages/sags.html" style="font-size: 14px;">САГС</a>
+                        <i class="fa fa-caret-down"></i>
+                        <div class="dropdown-content">
+                            <a href="sags_team1.html">Team1</a>
+                            <a href="#">Team2</a>
+                            <a href="#">Team3</a>
+                        </div>
+                    </li>
+                    <li><a href="#" style="font-size: 14px;">ХӨЛБӨМБӨГ</a></li>
+                    <li><a href="#" style="font-size: 14px;">ВОЛЛЕЙБОЛ</a></li>
+                    <li><a href="/pages/judo.html" style="font-size: 14px;">ҮНДЭСНИЙ  БӨХ</a></li>
+                    <li><a href="/pages/judo.html" style="font-size: 14px;">ЖУДО </a></li>
+                    <li><a href="/pages/judo.html" style="font-size: 14px;">... </a></li>
+                </ul>
+            </div>
+            <div class="nav-login">
+                <a href="login.html">Нэвтрэх</a>
+            </div>
+            <i class="fa fa-bars" onclick="showMenu()"></i>
+
+        </nav>
+    </header>
+        <form>
+            <div class="inner_body">
+                <div class="box">
+                    <input id="name" type="text" placeholder="Нэрээ оруулна уу." name="name"> <br> <hr>
+                    <input id="password" type="password" placeholder="Нууц үгээ оруулна уу." name="password"><br> <hr>
+                    <button class="bt">Нэвтрэх</button>
+                </div>
+            </div>
+            <div>
+                <span>Don’t have an account?</span>
+                <a href="#">Бүртгүүлэх</a>
+            </div>
+        </form>
 </body>
 </html>
